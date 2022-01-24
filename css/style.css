@@ -1,0 +1,108 @@
+:root {
+    --main-padding: 256px;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+.header {
+    color: white;
+    background-image: url('../img/backHeader.png');
+    background-repeat: no-repeat;
+
+    min-height: 90vh;
+}
+
+.logo {
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 36px;
+    padding: 15px var(--main-padding);
+    font-weight: 900;
+
+    line-height: 42px;
+}
+
+.nav-item {
+    font-size: 30px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 85px;
+    background: #292929;
+    padding: 25px var(--main-padding);
+    font-weight: 100;
+}
+
+.header-content {
+    margin-top: 250px;
+    padding-left: var(--main-padding);
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.header-title {
+    width: 510px;
+    padding-left: 90px;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 72px;
+    line-height: 84px;
+}
+
+.header-title-bold {
+    font-weight: 700;
+}
+
+/* ticket-form */
+.ticket-form {
+    width: 740px;
+    min-height: 540px;
+    background-color: rgba(41, 41, 41, 0.8);
+    padding: 80px 25px 0px 15px;
+}
+
+.ticket-form-title {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.ticket-form-row {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 20px;
+    background: #FFFFFF;
+    border-radius: 3px;
+    font-size: 18px;
+    width: 48%;
+}
+
+.input-wrapper ::placeholder {
+    color: #E5E5E5;
+}
+
+.ic {
+    background-repeat: no-repeat;
+}
+
+.ic-reset {
+    width: 24px;
+    height: 24px;
+    background-image: url('../img/icon-refresh.png');
+}
+
+.ic-location {
+    width: 20px;
+    height: 30px;
+    background-image: url('../img/icon-location.png');
+}
