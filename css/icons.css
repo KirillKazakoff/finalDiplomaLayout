@@ -6,9 +6,9 @@
 	background-position: center;
 	width: 30px;
 	height: 30px;
-	/* flex-grow: 1; */
 }
 
+/* ticket-form */
 .ic-reset {
 	background-image: url('../img/icon-refresh.png');
 }
@@ -21,16 +21,17 @@
 	background-image: url('../img/icon-calendar.png');
 }
 
+/* contacts */
 .ic-phone {
-	background-image: url('../img/footer/phone.png');
+	background-image: url('../img/footer/contacts/phone.png');
 }
 
 .ic-mail {
-	background-image: url('../img/footer/mail.png');
+	background-image: url('../img/footer/contacts/mail.png');
 }
 
 .ic-skype {
-	background-image: url('../img/footer/skype.png');
+	background-image: url('../img/footer/contacts/skype.png');
 }
 
 .ic-youtube {
