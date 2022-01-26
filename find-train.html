@@ -12,10 +12,11 @@
     <link rel='stylesheet' href='/css/fonts.css'>
     <link rel='stylesheet' href='/css/icons.css'>
     <link rel="stylesheet" href="/css/style.css">
+
 </head>
 
 <body>
-    <header class='header'>
+    <header class='header header-find-train'>
         <nav class='nav'>
             <div class='logo logo-header'>Лого</div>
             <ul class='nav-list'>
@@ -26,7 +27,39 @@
             </ul>
         </nav>
 
-        <section class='section header-content'>
+        <form class='ticket-form-inline'>
+            <div class='ticket-form-row ticket-form-row-inline'>
+                <h2 class='ticket-row-title'>Направление</h2>
+                <div class='input-wrapper'>
+                    <input placeholder='Откуда' class='input ticket-input-from'>
+                    <span class='ic ic-location'></span>
+                </div>
+                <span class='ic ic-reset'></span>
+                <div class='input-wrapper'>
+                    <input placeholder='Куда' class='input ticket-input-to'>
+                    <span class='ic ic-location'></span>
+                </div>
+            </div>
+
+            <div class='ticket-form-row ticket-form-row-inline'>
+                <h2 class='ticket-row-title'>Дата</h2>
+                <div class='input-wrapper'>
+                    <input placeholder='ДД/ММ/ГГ' class='input ticket-input-from'>
+                    <span class='ic ic-calendar'></span>
+                </div>
+
+                <div class='input-wrapper'>
+                    <input placeholder='ДД/ММ/ГГ' class='input ticket-input-to'>
+                    <span class='ic ic-calendar'></span>
+                </div>
+            </div>
+            <button class='btn find-tickets-btn find-tickets-btn-inline'>Найти билеты</button>
+        </form>
+
+
+        <div class='arrow-right'></div>
+
+        <!-- <section class='section header-content'>
             <div class='header-title'>Вся жизнь - <span class='header-title-bold'>путешествие!</span>
             </div>
 
@@ -50,6 +83,7 @@
                         <input placeholder='ДД/ММ/ГГ' class='input ticket-input-from'>
                         <span class='ic ic-calendar'></span>
                     </div>
+                    <span class='ic ic-reset'></span>
                     <div class='input-wrapper'>
                         <input placeholder='ДД/ММ/ГГ' class='input ticket-input-to'>
                         <span class='ic ic-calendar'></span>
@@ -58,80 +92,10 @@
 
                 <button class='btn find-tickets-btn'>Найти билеты</button>
             </form>
-
-        </section>
-        <div class='header-line'></div>
+        </section> -->
     </header>
-    <main class='main'>
-        <section class='section about'>
-            <h2 class='section-title about-title'>О нас</h2>
 
-            <div class='about-content'>
-                <p class='about-p'>Мы рады видеть вас! Мы работаем для Вас с 2003 года. 14 лет мы наблюдаем, как с
-                    каждым днем все больше людей заказывают жд билеты через интернет.</p>
-                <p class='about-p'>Сегодня можно заказать железнодорожные
-                    билеты онлайн всего в 2 клика, но стоит ли это делать? Мы расскажем о преимуществах заказа через
-                    интернет</p>
-                <p class='about-p'>
-                    Покупать жд билеты дешево можно за 90 суток до отправления поезда.
-                    Благодаря динамическому ценообразованию цена на билеты в это время самая низкая.</p>
-            </div>
-        </section>
 
-        <section class='section description'>
-            <header class='description-header'>
-                <h2 class='section-title description-title'>Как это работает</h2>
-                <button class='btn know-more-btn'>Узнать больше</button>
-            </header>
-            <ul class='skills'>
-                <li class='skill'>
-                    <div class='img skill-img skill-img-order'></div>
-                    <div class='skill-desc'>Удобный заказ на сайте</div>
-                </li>
-                <li class='skill'>
-                    <div class='img skill-img skill-img-noneed'></div>
-                    <div class='skill-desc'>Нет необходимости ехать в офис</div>
-                </li>
-                <li class='skill'>
-                    <div class='img skill-img skill-img-choose'></div>
-                    <div class='skill-desc'>Огромный выбор направлений</div>
-                </li>
-            </ul>
-        </section>
-
-        <section class='section reviews'>
-            <h2 class='section-title reviews-title'>Отзывы</h2>
-            <ul class='reviews-content'>
-                <li class='review'>
-                    <img class='img review-img' alt='kate-review' src='./img/reviews/Kate.png'>
-                    <div class='review-content'>
-                        <h3 class='review-title'>Екатерина Вальнова</h3>
-                        <p class='review-desc'>Доброжелательные подсказки на всех этапах помогут правильно заполнить
-                            поля и без затруднений купить авиа или ж/д билет, даже если вы заказываете онлайн билет
-                            впервые.
-                        </p>
-                    </div>
-                </li>
-                <li class='review'>
-                    <img class='img review-img' alt='evgen-review' src='./img/reviews/Eugene.png'>
-                    <div class='review-content'>
-                        <h3 class='review-title'>Евгений Стрыкало</h3>
-                        <p class='review-desc'>СМС-сопровождение до посадки Сразу после оплаты ж/д билетов и за 3 часа
-                            до
-                            отправления мы пришлем вам СМС-напоминание о поездке.
-                        </p>
-                    </div>
-                </li>
-            </ul>
-            <ul class='slider'>
-                <li class='slider-item slider-item-active'></li>
-                <li class='slider-item'></li>
-                <li class='slider-item'></li>
-                <li class='slider-item'></li>
-                <li class='slider-item'></li>
-            </ul>
-        </section>
-    </main>
 
     <footer class='footer'>
         <section class='section footer-section'>
