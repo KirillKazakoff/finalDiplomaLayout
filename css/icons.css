@@ -10,15 +10,15 @@
 
 /* ticket-form */
 .ic-reset {
-	background-image: url('../img/icon-refresh.png');
+	background-image: url('../img/header/icon-refresh.png');
 }
 
 .ic-location {
-	background-image: url('../img/icon-location.png');
+	background-image: url('../img/header/icon-location.png');
 }
 
 .ic-calendar {
-	background-image: url('../img/icon-calendar.png');
+	background-image: url('../img/header/icon-calendar.png');
 }
 
 /* contacts */
