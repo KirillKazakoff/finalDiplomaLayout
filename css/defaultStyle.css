@@ -35,6 +35,7 @@ input,
 button,
 video,
 audio {
+	color: inherit;
 	font-size: inherit;
 	background-color: transparent;
 	display: block;

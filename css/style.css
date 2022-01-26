@@ -11,6 +11,7 @@ body {
 	font-family: 'Roboto';
 	color: var(--black);
 	font-weight: 300;
+	min-width: 1590px;
 }
 
 .img {
@@ -30,16 +31,6 @@ body {
 	text-transform: uppercase;
 }
 
-.header {
-	color: white;
-	background-image: url('../img/backHeader.png');
-	background-size: cover;
-	background-repeat: no-repeat;
-
-	min-height: 90vh;
-	min-width: 1450px;
-}
-
 .btn {
 	border-radius: 5px;
 	text-transform: uppercase;
@@ -49,12 +40,21 @@ body {
 	color: inherit;
 }
 
-/* header */
 .logo {
 	font-size: 36px;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	font-weight: 900;
+}
+
+/* header */
+.header {
+	color: white;
+	background-image: url('../img/backHeader.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	min-height: 90vh;
 }
 
 .logo-header {
@@ -76,19 +76,18 @@ body {
 }
 
 .header-content {
+	padding-right: 150px;
 	margin-top: 265px;
 
 	display: flex;
-	width: 90%;
-	margin-left: auto;
-	/* flex-wrap: wrap; */
-	/* column-gap: 100px; */
+	justify-content: flex-end;
+	column-gap: 100px;
+
 	align-items: center;
 }
 
 .header-title {
-	/* width: 510px; */
-	width: 40%;
+	width: 500px;
 	font-style: normal;
 	font-weight: 100;
 	font-size: 72px;
@@ -101,12 +100,12 @@ body {
 
 /* ticket-form */
 .ticket-form {
+	min-width: 600px;
+	max-width: 800px;
+	width: 60%;
 	display: flex;
 	flex-direction: column;
 	row-gap: 60px;
-
-	min-width: 610px;
-	max-width: 750px;
 	min-height: 580px;
 	background-color: rgba(41, 41, 41, 0.8);
 	padding: 80px 25px 0px 15px;
@@ -159,7 +158,6 @@ body {
 }
 
 /* about-section */
-
 .about {
 	margin-top: 145px;
 }
@@ -257,6 +255,7 @@ body {
 
 /* reviews */
 .reviews {
+	min-width: 1590px;
 	margin-top: 150px;
 }
 
@@ -274,6 +273,10 @@ body {
 	column-gap: 30px;
 }
 
+.review-content {
+	max-width: 500px;
+}
+
 .review-title {
 	font-weight: 400;
 	font-size: 24px;
@@ -288,7 +291,7 @@ body {
 
 .review-desc {
 	position: relative;
-	width: 370px;
+
 	font-weight: 300;
 	font-style: italic;
 	font-size: 18px;
@@ -395,7 +398,6 @@ body {
 .subscribe-form-row {
 	display: flex;
 	width: 90%;
-	/* min-width: 600px; */
 	column-gap: 20px;
 }
 
@@ -430,14 +432,33 @@ body {
 /* footer-bottom */
 .footer-bottom {
 	position: relative;
-	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 15px;
 }
 
 .footer-bottom::before {
 	position: absolute;
 	content: '';
+	left: 0;
+	top: 0;
 	height: 1px;
 	padding: 0;
 	width: 100%;
 	background-color: #e5e5e5;
+}
+
+/* .red {
+	color: red;
+} */
+.footer-collapse {
+	padding: 3px;
+	border-radius: 50px;
+	border: 1px solid #e5e5e5;
+}
+
+.copyright {
+	font-weight: 100;
+	font-size: 24px;
 }
