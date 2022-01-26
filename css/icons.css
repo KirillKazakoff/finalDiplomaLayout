@@ -1,0 +1,58 @@
+/** @format */
+
+.ic {
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	width: 30px;
+	height: 30px;
+	/* flex-grow: 1; */
+}
+
+.ic-reset {
+	background-image: url('../img/icon-refresh.png');
+}
+
+.ic-location {
+	background-image: url('../img/icon-location.png');
+}
+
+.ic-calendar {
+	background-image: url('../img/icon-calendar.png');
+}
+
+.ic-phone {
+	background-image: url('../img/footer/phone.png');
+}
+
+.ic-mail {
+	background-image: url('../img/footer/mail.png');
+}
+
+.ic-skype {
+	background-image: url('../img/footer/skype.png');
+}
+
+.ic-youtube {
+	background-image: url('../img/footer/socials/youtube.png');
+	width: 35px;
+}
+
+.ic-linkedin {
+	background-image: url('../img/footer/socials/linkedin.png');
+}
+
+.ic-google {
+	background-image: url('../img/footer/socials/google.png');
+	width: 45px;
+}
+
+.ic-facebook {
+	background-image: url('../img/footer/socials/facebook.png');
+	width: 15px;
+}
+
+.ic-twitter {
+	background-image: url('../img/footer/socials/twitter.png');
+	width: 35px;
+}

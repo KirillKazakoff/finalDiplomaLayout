@@ -51,15 +51,16 @@ body {
 
 /* header */
 .logo {
-	background: rgba(0, 0, 0, 0.6);
 	font-size: 36px;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	font-weight: 900;
+}
+
+.logo-header {
 	padding-left: var(--main-left-padding);
 	padding-right: var(--main-right-padding);
-	font-weight: 900;
-
-	line-height: 42px;
+	background: rgba(0, 0, 0, 0.6);
 }
 
 .nav-item {
@@ -76,15 +77,18 @@ body {
 
 .header-content {
 	margin-top: 265px;
-	margin-left: 100px;
+
 	display: flex;
+	width: 90%;
+	margin-left: auto;
 	/* flex-wrap: wrap; */
-	column-gap: 100px;
+	/* column-gap: 100px; */
 	align-items: center;
 }
 
 .header-title {
-	width: 510px;
+	/* width: 510px; */
+	width: 40%;
 	font-style: normal;
 	font-weight: 100;
 	font-size: 72px;
@@ -127,39 +131,15 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-
 	padding: 15px 20px;
 	background: #ffffff;
 	border-radius: 3px;
-	font-size: 18px;
 	width: 47%;
 }
 
-.input-wrapper ::placeholder {
+.input::placeholder {
 	color: #e5e5e5;
-}
-
-.ic {
-	background-repeat: no-repeat;
-}
-
-.ic-reset {
-	width: 24px;
-	height: 24px;
-	background-image: url('../img/icon-refresh.png');
-}
-
-.ic-location {
-	width: 20px;
-	height: 30px;
-	background-image: url('../img/icon-location.png');
-}
-
-.ic-calendar {
-	width: 27px;
-	height: 30px;
-	background-image: url('../img/icon-calendar.png');
-	background-size: cover;
+	font-size: 18px;
 }
 
 .find-tickets-btn {
@@ -358,7 +338,106 @@ body {
 
 /* footer */
 .footer {
-	padding-left: 85px;
 	min-height: 520px;
 	background: #2d2b2f;
+	color: #ffffff;
+}
+
+.footer-section {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	/* margin-left: 5%; */
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 280px;
+	/* justify-content: space-between; */
+}
+
+.footer-section-right-row {
+	flex-grow: 1;
+}
+
+.footer-subtitle {
+	font-size: 30px;
+}
+
+/* contacts */
+.contacts-list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+	margin-top: 30px;
+}
+
+.contact {
+	display: flex;
+	column-gap: 35px;
+	align-items: center;
+	font-weight: 300;
+}
+
+.contact-link-location {
+	display: block;
+	width: 200px;
+}
+
+.ic-location-footer {
+	margin-top: 5px;
+	align-self: flex-start;
+}
+
+/* subscription */
+.subscribe-form {
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+.subscribe-form-row {
+	display: flex;
+	width: 90%;
+	/* min-width: 600px; */
+	column-gap: 20px;
+}
+
+.label-subscription {
+	display: block;
+	font-size: 22px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+.input-wrapper-subscription {
+	flex-grow: 1;
+}
+
+.btn-subscribe {
+	font-weight: 300;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 1px solid #ffffff;
+	border-radius: 3px;
+}
+
+/* socials */
+.socials-list {
+	display: flex;
+	align-items: flex-end;
+	column-gap: 50px;
+	margin-top: 25px;
+}
+
+/* footer-bottom */
+.footer-bottom {
+	position: relative;
+	width: 100%;
+}
+
+.footer-bottom::before {
+	position: absolute;
+	content: '';
+	height: 1px;
+	padding: 0;
+	width: 100%;
+	background-color: #e5e5e5;
 }
