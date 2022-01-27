@@ -2,7 +2,10 @@
     --main-left-padding: 260px;
     --main-right-padding: 120px;
     --black: #292929;
+    --black-light: #3e3c41;
     --bg-color: #ffa800;
+
+    --progress-border: 40px;
 }
 
 body {
@@ -207,25 +210,35 @@ body {
     background-color: var(--bg-color);
 }
 
-.bar::before {
+/* .bar::before {
     content: '';
     position: absolute;
     right: 0;
     top: 0;
-    border-top: 50px solid #3e3c41;
-    border-bottom: 50px solid #3e3c41;
-    border-left: 40px solid var(--bg-color);
-}
-
-/* .bar.active::before {
-    position: absolute;
-    right: 0;
-    top: 0;
-    content: '';
     border-top: 50px solid #3e3c41;
     border-bottom: 50px solid #3e3c41;
     border-left: 40px solid var(--bg-color);
 } */
+
+.bar.active::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: '';
+    border-top: 50px solid var(--black-light);
+    border-bottom: 50px solid var(--black-light);
+    border-left: 40px solid var(--bg-color);
+}
+
+.bar.active::before {
+    position: absolute;
+    left: calc(var(--progress-border) * -1);
+    top: 0;
+    content: '';
+    border-top: 50px solid var(--bg-color);
+    border-bottom: 50px solid var(--bg-color);
+    border-left: var(--progress-border) solid var(--black-light);
+}
 
 .bar:first-child {
     width: 33%;
@@ -236,22 +249,8 @@ body {
     background-image: none;
 }
 
-.bar:last-child::before {
+.bar:last-child::after {
     border: none;
-}
-
-.arrow-right {
-    position: relative;
-
-    width: 0;
-    height: 0;
-
-    /* background-image: url('../img/header/progressLineArrow.png'); */
-    border-top: 50px solid transparent;
-    border-bottom: 50px solid transparent;
-    transform: rotate(180deg);
-    /* transform: rotatey(180deg); */
-    border-right: 40px solid green;
 }
 
 /* main */
