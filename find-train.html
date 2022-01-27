@@ -27,8 +27,8 @@
             </ul>
         </nav>
 
-        <form class='ticket-form-inline'>
-            <div class='ticket-form-row ticket-form-row-inline'>
+        <form class='header-form-inline'>
+            <div class='header-form-row header-form-row-inline'>
                 <h2 class='ticket-row-title'>Направление</h2>
                 <div class='input-wrapper'>
                     <input placeholder='Откуда' class='input ticket-input-from'>
@@ -41,7 +41,7 @@
                 </div>
             </div>
 
-            <div class='ticket-form-row ticket-form-row-inline'>
+            <div class='header-form-row header-form-row-inline'>
                 <h2 class='ticket-row-title'>Дата</h2>
                 <div class='input-wrapper'>
                     <input placeholder='ДД/ММ/ГГ' class='input ticket-input-from'>
@@ -58,131 +58,48 @@
 
 
         <div class='progress-line'>
-            <div class='bar active'></div>
-            <div class='bar'></div>
-            <div class='bar'></div>
-            <div class='bar'></div>
-        </div>
-
-        <!-- <section class='section header-content'>
-            <div class='header-title'>Вся жизнь - <span class='header-title-bold'>путешествие!</span>
+            <div class='bar bar-active'>
+                <div class='bar-count'>1</div>
+                <div class='bar-desc'>Билеты</div>
             </div>
-
-            <form class='ticket-form'>
-                <div class='ticket-form-row'>
-                    <h2 class='ticket-row-title'>Направление</h2>
-                    <div class='input-wrapper'>
-                        <input placeholder='Откуда' class='input ticket-input-from'>
-                        <span class='ic ic-location'></span>
-                    </div>
-                    <span class='ic ic-reset'></span>
-                    <div class='input-wrapper'>
-                        <input placeholder='Куда' class='input ticket-input-to'>
-                        <span class='ic ic-location'></span>
-                    </div>
-                </div>
-
-                <div class='ticket-form-row'>
-                    <h2 class='ticket-row-title'>Дата</h2>
-                    <div class='input-wrapper'>
-                        <input placeholder='ДД/ММ/ГГ' class='input ticket-input-from'>
-                        <span class='ic ic-calendar'></span>
-                    </div>
-                    <span class='ic ic-reset'></span>
-                    <div class='input-wrapper'>
-                        <input placeholder='ДД/ММ/ГГ' class='input ticket-input-to'>
-                        <span class='ic ic-calendar'></span>
-                    </div>
-                </div>
-
-                <button class='btn find-tickets-btn'>Найти билеты</button>
-            </form>
-        </section> -->
+            <div class='bar'>
+                <div class='bar-count'>2</div>
+                <div class='bar-desc'>Пассажиры</div>
+            </div>
+            <div class='bar'>
+                <div class='bar-count'>3</div>
+                <div class='bar-desc'>Оплата</div>
+            </div>
+            <div class='bar'>
+                <div class='bar-count'>4</div>
+                <div class='bar-desc'>Проверка</div>
+            </div>
+        </div>
     </header>
 
-
-
-    <footer class='footer'>
-        <section class='section footer-section'>
-            <div class='footer-section-left-row'>
-                <div class='contacts'>
-                    <h2 class='footer-subtitle contacts-title'>Свяжитесь с нами</h2>
-                    <ul class='contacts-list'>
-                        <li class='contact'>
-                            <div class='ic ic-phone'></div>
-                            <a class='contact-link' href='tel:8 (800) 000 00 00'>8 (800) 000 00 00</a>
-                        </li>
-                        <li class='contact'>
-                            <div class='ic ic-mail'></div>
-                            <a class='contact-link' href='mailto:inbox@mail.ru'>inbox@mail.ru</a>
-                        </li>
-                        <li class='contact'>
-                            <div class='ic ic-skype'></div>
-                            <a class='contact-link' href='skype:tu.train.tickets'>tu.train.tickets</a>
-                        </li>
-                        <li class='contact'>
-                            <div class='ic ic-location ic-location-footer'></div>
-                            <span class='contact-link contact-link-location'>г. Москва ул. Московская 27-35 555
-                                555</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class='footer-section-right-row'>
-                <div class='subscription'>
-                    <h2 class='footer-subtitle subscription-title'>Подписка</h2>
-                    <form class='form subscribe-form'>
-                        <label for='subscribe' class='label label-subscription'>Будьте в курсе событий</label>
-
-                        <div class='subscribe-form-row'>
-                            <div class='input-wrapper input-wrapper-subscription'>
-                                <input id='subscribe' class='input input-subscription' type='mail' placeholder='e-mail'>
+    <main class='main'>
+        <section class='section-central framed'>
+            <aside class='central-aside'>
+                <div class='aside-part'>
+                    <form class='aside-form'>
+                        <div class='header-form-row'>
+                            <h2 class='ticket-row-title'>Направление</h2>
+                            <div class='input-wrapper'>
+                                <input placeholder='Откуда' class='input ticket-input-from'>
+                                <span class='ic ic-location'></span>
                             </div>
-
-                            <button class='btn btn-subscribe'>Отправить</button>
                         </div>
                     </form>
                 </div>
-                <div class='socials'>
-                    <h2 class='footer-subtitle'>Подписывайтесь на нас</h2>
-                    <ul class='socials-list'>
-                        <li class='social'>
-                            <a href='#' class='social-link'>
-                                <div class='ic ic-youtube'></div>
-                            </a>
-                        </li>
-                        <li class='social'>
-                            <a href='#' class='social-link'>
-                                <div class='ic ic-linkedin'></div>
-                            </a>
-                        </li>
-                        <li class='social'>
-                            <a href='#' class='social-link'>
-                                <div class='ic ic-google'></div>
-                            </a>
-                        </li>
-                        <li class='social'>
-                            <a href='#' class='social-link'>
-                                <div class='ic ic-facebook'></div>
-                            </a>
-                        </li>
-                        <li class='social'>
-                            <a href='#' class='social-link'>
-                                <div class='ic ic-twitter'></div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                <div class='aside-part'></div>
+            </aside>
+            <div class='central-content'>
+                <div class='content-part'></div>
+                <div class='content-part'></div>
             </div>
+
         </section>
-        <section class='section footer-bottom'>
-            <div class='logo'>Лого</div>
-            <button class="footer-collapse material-icons">
-                expand_less
-            </button>
-            <p class='copyright'>2022 WEB</p>
-        </section>
-    </footer>
+    </main>
 
 </body>
 
