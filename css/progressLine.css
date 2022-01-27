@@ -45,7 +45,7 @@
 }
 
 .bar-active {
-    background-color: var(--bg-color);
+    background-color: var(--bg-main);
 }
 
 .bar-active::after {
@@ -55,7 +55,7 @@
     content: '';
     border-top: 50px solid var(--black-light);
     border-bottom: 50px solid var(--black-light);
-    border-left: 40px solid var(--bg-color);
+    border-left: 40px solid var(--bg-main);
 }
 
 .bar-active::before {
@@ -63,7 +63,7 @@
     left: calc(var(--progress-border) * -1);
     top: 0;
     content: '';
-    border-top: 50px solid var(--bg-color);
-    border-bottom: 50px solid var(--bg-color);
+    border-top: 50px solid var(--bg-main);
+    border-bottom: 50px solid var(--bg-main);
     border-left: var(--progress-border) solid var(--black-light);
 }
