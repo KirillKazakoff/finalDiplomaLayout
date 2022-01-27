@@ -62,7 +62,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.header-find-train {
+.header-central {
     background-image: url('../img/header/backHeaderFind.png');
 }
 
@@ -131,7 +131,7 @@ body {
     padding: 30px 40px 180px 40px;
 }
 
-.header-form-row {
+.form-row {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -139,11 +139,11 @@ body {
     flex-grow: 1;
 }
 
-.header-form-row-inline {
+.form-row-inline {
     width: 47%;
 }
 
-.ticket-row-title {
+.row-title {
     font-weight: 100;
     width: 100%;
     padding-left: 10px;
