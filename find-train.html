@@ -12,7 +12,7 @@
     <link rel='stylesheet' href='/css/fonts.css'>
     <link rel='stylesheet' href='/css/icons.css'>
     <link rel="stylesheet" href="/css/style.css">
-
+    <link rel='stylesheet' href='/css/progressLine.css'>
 </head>
 
 <body>
@@ -47,7 +47,7 @@
                     <input placeholder='ДД/ММ/ГГ' class='input input-from'>
                     <span class='ic ic-calendar'></span>
                 </div>
-
+                <span class='space-row'></span>
                 <div class='input-wrapper'>
                     <input placeholder='ДД/ММ/ГГ' class='input input-to'>
                     <span class='ic ic-calendar'></span>
@@ -79,21 +79,82 @@
 
     <main class='main'>
         <section class='section-central framed'>
-            <aside class='central-aside'>
-                <div class='aside-part'>
-                    <form class='aside-form'>
-                        <div class='form-row'>
-                            <h2 class='row-title'>Направление</h2>
-                            <div class='input-wrapper'>
-                                <input placeholder='Откуда' class='input input-from'>
-                                <span class='ic ic-location'></span>
+            <aside class='aside-central'>
+                <div class='aside-part aside-part-trip'>
+                    <div class='trip-section'>
+                        <form class='trip-form'>
+                            <div class='form-row'>
+                                <h2 class='row-title row-title-small'>Дата поездки</h2>
+                                <div class='input-wrapper input-wrapper-small'>
+                                    <input placeholder='ДД/ММ/ГГ' class='input input-from'>
+                                    <span class='ic ic-calendar'></span>
+                                </div>
                             </div>
+                            <div class='form-row'>
+                                <h2 class='row-title row-title-small'>Дата возвращения</h2>
+                                <div class='input-wrapper input-wrapper-small'>
+                                    <input placeholder='ДД/ММ/ГГ' class='input input-from'>
+                                    <span class='ic ic-calendar'></span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class='trip-section'>
+                        <ul class='togglers'>
+                            <li class='toggler-container'>
+                                <div class='ic ic-coupe'></div>
+                                <div class='toggler-desc'>Купе</div>
+                                <div class='toggler-plug'></div>
+                            </li>
+                            <li class='toggler-container'>
+                                <div class='ic ic-plaz'></div>
+                                <div class='toggler-desc'>Плацкарт</div>
+                                <div class='toggler-plug'></div>
+                            </li>
+                            <li class='toggler-container'>
+                                <div class='ic ic-person'></div>
+                                <div class='toggler-desc'>Сидячий</div>
+                                <div class='toggler-plug'></div>
+                            </li>
+                            <li class='toggler-container'>
+                                <div class='ic ic-star'></div>
+                                <div class='toggler-desc'>Люкс</div>
+                                <div class='toggler-plug'></div>
+                            </li>
+                            <li class='toggler-container'>
+                                <div class='ic ic-wireless'></div>
+                                <div class='toggler-desc'>Wi-Fi</div>
+                                <div class='toggler-plug'></div>
+                            </li>
+                            <li class='toggler-container'>
+                                <div class='ic ic-rocket'></div>
+                                <div class='toggler-desc'>Экспресс</div>
+                                <div class='toggler-plug'></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class='trip-section trip-section-cost'>
+                        <h2 class='row-title row-title-small cost-title'>Стоимость</h2>
+                        <div class='slider-plug'></div>
+                    </div>
+                    <div class='trip-section trip-section-subtle'>
+                        <div class='subtle-time-container'>
+                            <div class='subtle-arrow subtle-arrow-to'></div>
+                            <div class='subtle-time-desc'>Туда</div>
+                            <div class='subtle-time-collapse'>+</div>
                         </div>
-                    </form>
+                    </div>
+                    <div class='trip-section trip-section-subtle'>
+                        <div class='subtle-time-container'>
+                            <div class='subtle-arrow subtle-arrow-from'></div>
+                            <div class='subtle-time-desc'>Обратно</div>
+                            <div class='subtle-time-collapse'>+</div>
+                        </div>
+                    </div>
                 </div>
                 <div class='aside-part'></div>
             </aside>
-            <div class='central-content'>
+            <div class='content-central'>
                 <div class='content-part'></div>
                 <div class='content-part'></div>
             </div>
