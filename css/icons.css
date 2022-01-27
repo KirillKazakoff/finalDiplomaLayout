@@ -94,3 +94,9 @@
     height: 20px;
     background-image: url('../img/togglers/wireless.png');
 }
+
+.ic-cup {
+    width: 20px;
+    height: 18px;
+    background-image: url('../img/togglers/cup.png');
+}

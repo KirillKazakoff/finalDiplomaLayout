@@ -4,6 +4,7 @@
     --progress-border: 40px;
     --space-row: 25px;
 
+    --secondary-color: #928f94;
     --black: #292929;
     --black-light: #3e3c41;
     --bg-color: #ffa800;
@@ -335,6 +336,84 @@ body {
     background-position: center;
     font-size: 23px;
     padding: 9px;
+}
+
+/* last-tickets */
+.aside-part-last-tickets {
+    color: black;
+}
+
+.last-tickets-title {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.last-tickets {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.last-ticket {
+    padding: 20px 20px 15px 20px;
+    background: #ffffff;
+    border: 1px solid #c4c4c4;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 2px rgba(62, 60, 65, 0.25);
+}
+
+.last-cities {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.last-city {
+    font-size: 20px;
+}
+
+.last-stations {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.last-station {
+    color: var(--secondary-color);
+    width: 35%;
+}
+
+.last-station-to {
+    text-align: right;
+}
+
+.last-ticket-footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.last-extra-options {
+    display: flex;
+    column-gap: 20px;
+}
+
+.last-cost {
+    display: flex;
+    align-items: baseline;
+    color: var(--secondary-color);
+}
+
+.last-count-container {
+    font-size: 36px;
+}
+
+.last-count {
+    padding-left: 5px;
+    font-weight: bold;
+    color: var(--bg-color);
 }
 
 /* .content-central */
