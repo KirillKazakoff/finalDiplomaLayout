@@ -16,7 +16,7 @@
     --bg-central: #f7f5f9;
 }
 
-@media (max-width: 1700px) {
+@media (max-width: 1715px) {
     :root {
         --main-left-padding: 70px;
         --main-right-padding: 70px;
@@ -401,25 +401,33 @@ body {
     justify-content: space-between;
 }
 
-.last-extra-options {
-    display: flex;
-    column-gap: 20px;
+.last-cost {
+    align-items: baseline;
 }
 
-.last-cost {
+.last-cost-count {
+    color: var(--bg-main);
+}
+
+/* ticket-common */
+.cost {
     display: flex;
-    align-items: baseline;
     color: var(--secondary);
 }
 
-.last-count-container {
+.cost-count-container {
     font-size: 36px;
 }
 
-.last-count {
-    padding-left: 5px;
+.cost-count {
+    padding-left: 10px;
     font-weight: bold;
-    color: var(--bg-main);
+    /* color: var(--black);  */
+}
+
+.extra-options {
+    display: flex;
+    column-gap: 20px;
 }
 
 /* .content-central */
@@ -484,6 +492,7 @@ body {
 
 /* .ticket-aside-left */
 .ticket-aside-left {
+    width: 20%;
     align-self: stretch;
     display: flex;
     flex-direction: column;
@@ -514,11 +523,12 @@ body {
 
 /* .ticket-center */
 .ticket-center {
-    padding: 50px 25px 50px 40px;
+    width: 52%;
     display: flex;
     align-self: flex-start;
     flex-direction: column;
     row-gap: 60px;
+    padding: 50px 25px 50px 40px;
 }
 
 .ticket-direction {
@@ -526,6 +536,8 @@ body {
 }
 
 .ticket-info {
+    /* width: 35%; */
+    /* flex-grow: 1; */
     display: flex;
     flex-direction: column;
     row-gap: 5px;
@@ -548,19 +560,54 @@ body {
 }
 
 .travel-time {
+    width: 60px;
     position: relative;
     top: -5px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    row-gap: 5px;
-    margin-left: 20px;
-    margin-right: 60px;
+    left: -10px;
+
+    flex-grow: 1;
 }
 
 .travel-time-desc {
     color: var(--secondary-lighter);
+    margin-bottom: 5px;
 }
+
+.ticket-aside-right {
+    min-width: 285px;
+    flex-grow: 1;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    padding: 40px 25px 25px 25px;
+    border-left: 1px dashed #e5e5e5;
+}
+
+.ticket-type {
+    display: flex;
+
+    align-items: center;
+    column-gap: 20px;
+    font-size: 16px;
+}
+
+.ticket-amount-left {
+    color: var(--bg-main);
+}
+
+.main-cost {
+    align-items: center;
+}
+
+.main-cost-count {
+    color: #000;
+}
+
+.main-cost-count-container {
+    font-size: 24px;
+}
+
 /* about-section */
 .about {
     margin-top: 145px;
