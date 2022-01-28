@@ -1,15 +1,26 @@
 :root {
+    /* --main-left-padding: 60px;
+    --main-right-padding: 60px; */
+
     --main-left-padding: 260px;
-    --main-right-padding: 120px;
+    --main-right-padding: 140px;
     --progress-border: 40px;
     --space-row: 25px;
 
-    --secondary-color: #928f94;
+    --secondary: #928f94;
+    --secondary-lighter: #c4c4c4;
     --black: #292929;
     --black-light: #3e3c41;
     --bg-main: #ffa800;
     --bg-main-light: #fcdc9d;
     --bg-central: #f7f5f9;
+}
+
+@media (max-width: 1700px) {
+    :root {
+        --main-left-padding: 70px;
+        --main-right-padding: 70px;
+    }
 }
 
 body {
@@ -115,11 +126,6 @@ body {
     font-weight: 700;
 }
 
-/* forms */
-/* .header-form-columned {
-    common styles add
-} */
-
 .header-form {
     font-weight: 100;
     min-width: 600px;
@@ -140,8 +146,8 @@ body {
     column-gap: 35px;
     margin-top: 110px;
     background-color: rgba(41, 41, 41, 0.6);
-    margin-left: var(--main-left-padding);
-    margin-right: var(--main-right-padding);
+    margin-left: calc(var(--main-left-padding) - 40px);
+    margin-right: calc(var(--main-right-padding) - 40px);
     padding: 30px 40px 180px 40px;
 }
 
@@ -381,7 +387,7 @@ body {
 }
 
 .last-station {
-    color: var(--secondary-color);
+    color: var(--secondary);
     width: 35%;
 }
 
@@ -403,7 +409,7 @@ body {
 .last-cost {
     display: flex;
     align-items: baseline;
-    color: var(--secondary-color);
+    color: var(--secondary);
 }
 
 .last-count-container {
@@ -422,11 +428,139 @@ body {
     width: 60%;
 }
 
-.content-part {
-    height: 200px;
-    margin-bottom: 50px;
+/* filtration */
+.filtration {
+    font-size: 18px;
+    color: var(--secondary);
+    display: flex;
+    column-gap: 50px;
 }
 
+.filtration-found {
+    flex-grow: 1;
+}
+
+.filtration-sort {
+    display: flex;
+    column-gap: 10px;
+}
+
+.filtration-sort-filter {
+    color: var(--black);
+}
+
+.filtration-amount {
+    display: flex;
+    column-gap: 10px;
+}
+
+.filtration-amount-numbers {
+    display: flex;
+    column-gap: 10px;
+}
+
+.filtration-amount-number {
+    cursor: pointer;
+}
+
+.filtration-amount-number-active {
+    color: var(--black);
+}
+
+/* tickets */
+.tickets {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    margin-top: 50px;
+}
+
+.ticket {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    border: 1px solid #c4c4c4;
+}
+
+/* .ticket-aside-left */
+.ticket-aside-left {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+
+    min-width: 200px;
+    padding: 30px 20px;
+    background-color: #e4e0e9;
+}
+
+.train-number {
+    color: var(--black-light);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.train-station {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 16px;
+}
+
+.train-station-previous {
+    color: var(--secondary);
+}
+
+/* .ticket-center */
+.ticket-center {
+    padding: 50px 25px 50px 40px;
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    row-gap: 60px;
+}
+
+.ticket-direction {
+    display: flex;
+}
+
+.ticket-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.ticket-time {
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.ticket-city {
+    color: var(--black);
+    font-size: 18px;
+}
+
+.ticket-station {
+    color: var(--secondary);
+    font-size: 16px;
+}
+
+.travel-time {
+    position: relative;
+    top: -5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 5px;
+    margin-left: 20px;
+    margin-right: 60px;
+}
+
+.travel-time-desc {
+    color: var(--secondary-lighter);
+}
 /* about-section */
 .about {
     margin-top: 145px;

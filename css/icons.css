@@ -100,3 +100,50 @@
     height: 18px;
     background-image: url('../img/togglers/cup.png');
 }
+
+.ic-train {
+    position: relative;
+    width: 45px;
+    height: 52px;
+    background-image: url('../img/train.png');
+    margin: 17px 21px;
+}
+
+.ic-train::before {
+    position: absolute;
+    content: '';
+    left: -21px;
+    right: -21px;
+    top: -17px;
+    bottom: -17px;
+
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+.ic-arrow {
+    width: 16px;
+    height: 7px;
+    background-size: cover;
+}
+
+.ic-arrow-next {
+    background-image: url('../img/arrows/arrow-next.png');
+}
+
+.ic-arrow-previous {
+    background-image: url('../img/arrows/arrow-previous.png');
+}
+
+.ic-arrow-yellow {
+    width: 30px;
+    height: 20px;
+}
+
+.ic-arrow-travel-time-to {
+    background-image: url('../img/arrows/ic-arrow-travel-time-to.png');
+}
+
+.ic-arrow-travel-time-from {
+    background-image: url('../img/arrows/ic-arrow-travel-time-from.png');
+}
