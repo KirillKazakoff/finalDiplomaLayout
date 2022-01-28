@@ -46,6 +46,13 @@ body {
     padding-left: var(--main-left-padding);
 }
 
+.btn {
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: inherit;
+}
+
 .space-row {
     height: 1px;
     width: var(--space-row);
@@ -55,15 +62,6 @@ body {
     font-size: 36px;
     font-weight: 400;
     text-transform: uppercase;
-}
-
-.btn {
-    border-radius: 5px;
-    text-transform: uppercase;
-    padding: 15px 70px;
-    font-size: 24px;
-    cursor: pointer;
-    color: inherit;
 }
 
 .logo {
@@ -205,8 +203,8 @@ body {
     margin-left: auto;
     color: var(--black);
     background: var(--bg-main);
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 15px 20px;
+    font-size: 24px;
 }
 
 .find-tickets-btn-inline {
@@ -523,7 +521,7 @@ body {
 
 /* .ticket-center */
 .ticket-center {
-    width: 52%;
+    width: 53%;
     display: flex;
     align-self: flex-start;
     flex-direction: column;
@@ -536,8 +534,8 @@ body {
 }
 
 .ticket-info {
-    /* width: 35%; */
-    /* flex-grow: 1; */
+    width: 40%;
+
     display: flex;
     flex-direction: column;
     row-gap: 5px;
@@ -560,10 +558,9 @@ body {
 }
 
 .travel-time {
-    width: 60px;
+    width: 5%;
     position: relative;
     top: -5px;
-    left: -10px;
 
     flex-grow: 1;
 }
@@ -574,17 +571,28 @@ body {
 }
 
 .ticket-aside-right {
-    min-width: 285px;
-    flex-grow: 1;
-    align-self: stretch;
+    width: 22%;
     display: flex;
-    flex-direction: column;
-    row-gap: 25px;
-    padding: 40px 25px 25px 25px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    min-width: 285px;
+
+    align-self: stretch;
+    padding: 35px 25px 25px 25px;
     border-left: 1px dashed #e5e5e5;
 }
 
+.ticket-types {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
 .ticket-type {
+    flex-grow: 1;
+    width: 100%;
     display: flex;
 
     align-items: center;
@@ -606,6 +614,23 @@ body {
 
 .main-cost-count-container {
     font-size: 24px;
+}
+
+.ticket-footer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: flex-end;
+}
+
+.btn-choose-places {
+    margin-top: 20px;
+    background-color: var(--bg-main);
+    color: white;
+    font-weight: 500;
+    text-transform: initial;
+    padding: 5px 20px;
 }
 
 /* about-section */
