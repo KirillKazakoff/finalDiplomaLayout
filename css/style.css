@@ -555,8 +555,13 @@ body {
 }
 
 .travel-time {
-    width: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
     position: relative;
+    width: 5%;
+    left: -40px;
     top: -5px;
 
     flex-grow: 1;
@@ -565,6 +570,8 @@ body {
 .travel-time-desc {
     color: var(--secondary-lighter);
     margin-bottom: 5px;
+    text-align: center;
+    width: 100%;
 }
 
 .ticket-aside-right {
