@@ -1,0 +1,13 @@
+:root {
+    --bg-main-filter: brightness(0) saturate(100%) invert(62%) sepia(25%) saturate(3221%)
+        hue-rotate(2deg) brightness(109%) contrast(103%);
+}
+
+.ic-svg-person {
+    width: 100px;
+}
+
+.ic-svg-person:hover {
+    filter: brightness(0) saturate(100%) invert(62%) sepia(25%) saturate(3221%)
+        hue-rotate(2deg) brightness(109%) contrast(103%);
+}
