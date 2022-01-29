@@ -304,19 +304,13 @@ body {
 }
 
 .subtle-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 30px;
     height: 25px;
     background-color: var(--bg-main);
-    background-position: center;
-    background-repeat: no-repeat;
     border-radius: 5px;
-}
-
-.subtle-arrow-to {
-    background-image: url('../img/arrows/arrow-to.png');
-}
-.subtle-arrow-from {
-    background-image: url('../img/arrows/arrow-from.png');
 }
 
 .subtle-time-desc {
