@@ -518,7 +518,7 @@ body {
 
 /* .ticket-center */
 .ticket-center {
-    width: 53%;
+    width: 54%;
     display: flex;
     align-self: flex-start;
     flex-direction: column;
@@ -588,14 +588,12 @@ body {
 }
 
 .ticket-types {
-    width: 100%;
     display: flex;
     flex-direction: column;
     row-gap: 25px;
 }
 
 .ticket-type {
-    flex-grow: 1;
     width: 100%;
     display: flex;
 
