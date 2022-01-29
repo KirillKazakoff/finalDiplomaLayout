@@ -685,6 +685,8 @@ body {
     border: 1px solid #ffffff;
     border-radius: 3px;
     margin-right: 35px;
+    padding: 15px 70px;
+    font-weight: 500;
 }
 
 .skills {
@@ -923,7 +925,7 @@ body {
 }
 
 .footer-collapse {
-    padding: 3px;
+    padding: 13px 10px;
     border-radius: 50px;
     border: 1px solid #e5e5e5;
 }

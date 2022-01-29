@@ -17,8 +17,6 @@
 </head>
 
 <body>
-    <img class='ic-svg-person' src='./svg/person.svg'>
-
     <header class='header header-central'>
         <nav class='nav'>
             <div class='logo logo-header'>Лого</div>
@@ -35,12 +33,12 @@
                 <h2 class='row-title'>Направление</h2>
                 <div class='input-wrapper'>
                     <input placeholder='Откуда' class='input input-from'>
-                    <span class='ic ic-location'></span>
+                    <img src='./svg/location.svg' height='30px' alt=''>
                 </div>
-                <span class='ic ic-reset'></span>
+                <img class='ic-refresh' src='./svg/refresh.svg' width='25px' alt=''>
                 <div class='input-wrapper'>
                     <input placeholder='Куда' class='input input-to'>
-                    <span class='ic ic-location'></span>
+                    <img src='./svg/location.svg' height='30px' alt=''>
                 </div>
             </div>
 
@@ -48,12 +46,12 @@
                 <h2 class='row-title'>Дата</h2>
                 <div class='input-wrapper'>
                     <input placeholder='ДД/ММ/ГГ' class='input input-from'>
-                    <span class='ic ic-calendar'></span>
+                    <img src="./svg/calendar.svg" height='30px' alt="">
                 </div>
                 <span class='space-row'></span>
                 <div class='input-wrapper'>
                     <input placeholder='ДД/ММ/ГГ' class='input input-to'>
-                    <span class='ic ic-calendar'></span>
+                    <img src="./svg/calendar.svg" height='30px' alt="">
                 </div>
             </div>
             <button class='btn find-tickets-btn find-tickets-btn-inline'>Найти билеты</button>
@@ -90,14 +88,14 @@
                                 <h2 class='row-title row-title-small'>Дата поездки</h2>
                                 <div class='input-wrapper input-wrapper-small'>
                                     <input placeholder='ДД/ММ/ГГ' class='input input-from'>
-                                    <span class='ic ic-calendar'></span>
+                                    <img src="./svg/calendar.svg" height='22px' alt="">
                                 </div>
                             </div>
                             <div class='form-row'>
                                 <h2 class='row-title row-title-small'>Дата возвращения</h2>
                                 <div class='input-wrapper input-wrapper-small'>
                                     <input placeholder='ДД/ММ/ГГ' class='input input-from'>
-                                    <span class='ic ic-calendar'></span>
+                                    <img src="./svg/calendar.svg" height='22px' alt="">
                                 </div>
                             </div>
                         </form>
@@ -105,32 +103,32 @@
                     <div class='trip-section'>
                         <ul class='togglers'>
                             <li class='toggler-container'>
-                                <div class='ic ic-coupe'></div>
+                                <img src='./svg/features/coupe.svg' alt='coupe'>
                                 <div class='toggler-desc'>Купе</div>
                                 <div class='toggler-plug'></div>
                             </li>
                             <li class='toggler-container'>
-                                <div class='ic ic-plaz'></div>
+                                <img src='./svg/features/plaz.svg' alt='plaz'>
                                 <div class='toggler-desc'>Плацкарт</div>
                                 <div class='toggler-plug'></div>
                             </li>
                             <li class='toggler-container'>
-                                <div class='ic ic-person'></div>
+                                <img src='./svg/features/person.svg' alt='person'>
                                 <div class='toggler-desc'>Сидячий</div>
                                 <div class='toggler-plug'></div>
                             </li>
                             <li class='toggler-container'>
-                                <div class='ic ic-star'></div>
+                                <img src='./svg/features/star.svg' alt='star'>
                                 <div class='toggler-desc'>Люкс</div>
                                 <div class='toggler-plug'></div>
                             </li>
                             <li class='toggler-container'>
-                                <div class='ic ic-wireless'></div>
+                                <img src='./svg/features/wireless.svg' alt='wireless'>
                                 <div class='toggler-desc'>Wi-Fi</div>
                                 <div class='toggler-plug'></div>
                             </li>
                             <li class='toggler-container'>
-                                <div class='ic ic-rocket'></div>
+                                <img src='./svg/features/rocket.svg' alt='rocket'>
                                 <div class='toggler-desc'>Экспресс</div>
                                 <div class='toggler-plug'></div>
                             </li>
@@ -169,9 +167,9 @@
                             </div>
                             <footer class='last-ticket-footer'>
                                 <div class='extra-options'>
-                                    <div class='ic ic-wireless'></div>
-                                    <div class='ic ic-rocket'></div>
-                                    <div class='ic ic-cup'></div>
+                                    <img src='./svg/features/wireless.svg' alt='wireless'>
+                                    <img src='./svg/features/rocket.svg' alt='rocket'>
+                                    <img src='./svg/features/cup.svg' alt='cup'>
                                 </div>
                                 <div class='cost last-cost'>
                                     <span class='cost-prefix'>от</span>
@@ -193,9 +191,9 @@
                             </div>
                             <footer class='last-ticket-footer'>
                                 <div class='extra-options'>
-                                    <div class='ic ic-wireless'></div>
-                                    <div class='ic ic-rocket'></div>
-                                    <div class='ic ic-cup'></div>
+                                    <img src='./svg/features/wireless.svg' alt='wireless'>
+                                    <img src='./svg/features/rocket.svg' alt='rocket'>
+                                    <img src='./svg/features/cup.svg' alt='cup'>
                                 </div>
                                 <div class='cost last-cost'>
                                     <span class='cost-prefix'>от</span>
@@ -231,20 +229,22 @@
                 <ul class='tickets'>
                     <li class='ticket'>
                         <aside class='ticket-aside-left'>
-                            <div class='ic ic-train'></div>
+                            <div class='train-wrapper'>
+                                <img class='ic-train' src='./svg/train.svg' alt='train'>
+                            </div>
                             <div class='train-number'>116C</div>
                             <ul class='train-stations'>
                                 <li class='train-station train-station-previous'>
                                     <span class='train-station-desc'>Адлер</span>
-                                    <div class='ic ic-arrow ic-arrow-previous'></div>
+                                    <img class='ic-arrow-station-prev' src='./svg/arrows/arrow-station.svg' alt='arrow'>
                                 </li>
                                 <li class='train-station train-station-next'>
                                     <span class='train-station-desc'>Москва</span>
-                                    <div class='ic ic-arrow ic-arrow-next'></div>
+                                    <img src='./svg/arrows/arrow-station.svg' alt='arrow'>
                                 </li>
                                 <li class='train-station train-station-next'>
                                     <span class='train-station-desc'>Санкт-Петербург</span>
-                                    <div class='ic ic-arrow ic-arrow-next'></div>
+                                    <img src='./svg/arrows/arrow-station.svg' alt='arrow'>
                                 </li>
                             </ul>
                         </aside>
@@ -257,7 +257,7 @@
                                 </div>
                                 <div class='travel-time'>
                                     <span class='travel-time-desc'>9 : 42</span>
-                                    <div class='ic ic-arrow-travel-time-to'></div>
+                                    <img src='./svg/arrows/arrow-travel-time-to.svg' alt='arrow-to'>
                                 </div>
                                 <div class='ticket-info ticket-to'>
                                     <span class='ticket-time ticket-time-to'>09:52</span>
@@ -274,7 +274,7 @@
                                 </div>
                                 <div class='travel-time'>
                                     <span class='travel-time-desc'>9 : 42</span>
-                                    <div class='ic ic-arrow-travel-time-from'></div>
+                                    <img src='./svg/arrows/arrow-travel-time-from.svg' alt='arrow-from'>
                                 </div>
                                 <div class='ticket-info ticket-to'>
                                     <span class='ticket-time ticket-time-to'>09:52</span>
@@ -332,9 +332,9 @@
                             </ul>
                             <footer class='ticket-footer'>
                                 <div class='extra-options'>
-                                    <div class='ic ic-wireless'></div>
-                                    <div class='ic ic-rocket'></div>
-                                    <div class='ic ic-cup'></div>
+                                    <img class='ic-secondary' src='./svg/features/wireless.svg' alt='wireless'>
+                                    <img class='ic-secondary' src='./svg/features/rocket.svg' alt='rocket'>
+                                    <img class='ic-secondary' src='./svg/features/cup.svg' alt='cup'>
                                 </div>
                                 <button class='btn btn-choose-places'>Выбрать места</button>
                             </footer>
@@ -342,20 +342,22 @@
                     </li>
                     <li class='ticket'>
                         <aside class='ticket-aside-left'>
-                            <div class='ic ic-train'></div>
+                            <div class='train-wrapper'>
+                                <img class='ic-train' src='./svg/train.svg' alt='train'>
+                            </div>
                             <div class='train-number'>116C</div>
                             <ul class='train-stations'>
                                 <li class='train-station train-station-previous'>
                                     <span class='train-station-desc'>Адлер</span>
-                                    <div class='ic ic-arrow ic-arrow-previous'></div>
+                                    <img class='ic-arrow-station-prev' src='./svg/arrows/arrow-station.svg' alt='arrow'>
                                 </li>
                                 <li class='train-station train-station-next'>
                                     <span class='train-station-desc'>Москва</span>
-                                    <div class='ic ic-arrow ic-arrow-next'></div>
+                                    <img src='./svg/arrows/arrow-station.svg' alt='arrow'>
                                 </li>
                                 <li class='train-station train-station-next'>
                                     <span class='train-station-desc'>Санкт-Петербург</span>
-                                    <div class='ic ic-arrow ic-arrow-next'></div>
+                                    <img src='./svg/arrows/arrow-station.svg' alt='arrow'>
                                 </li>
                             </ul>
                         </aside>
@@ -368,7 +370,7 @@
                                 </div>
                                 <div class='travel-time'>
                                     <span class='travel-time-desc'>9 : 42</span>
-                                    <div class='ic ic-arrow-travel-time-to'></div>
+                                    <img src='./svg/arrows/arrow-travel-time-to.svg' alt='arrow-to'>
                                 </div>
                                 <div class='ticket-info ticket-to'>
                                     <span class='ticket-time ticket-time-to'>09:52</span>
@@ -385,7 +387,7 @@
                                 </div>
                                 <div class='travel-time'>
                                     <span class='travel-time-desc'>9 : 42</span>
-                                    <div class='ic ic-arrow-travel-time-from'></div>
+                                    <img src='./svg/arrows/arrow-travel-time-from.svg' alt='arrow-from'>
                                 </div>
                                 <div class='ticket-info ticket-to'>
                                     <span class='ticket-time ticket-time-to'>09:52</span>
@@ -443,9 +445,9 @@
                             </ul>
                             <footer class='ticket-footer'>
                                 <div class='extra-options'>
-                                    <div class='ic ic-wireless'></div>
-                                    <div class='ic ic-rocket'></div>
-                                    <div class='ic ic-cup'></div>
+                                    <img class='ic-secondary' src='./svg/features/wireless.svg' alt='wireless'>
+                                    <img class='ic-secondary' src='./svg/features/rocket.svg' alt='rocket'>
+                                    <img class='ic-secondary' src='./svg/features/cup.svg' alt='cup'>
                                 </div>
                                 <button class='btn btn-choose-places'>Выбрать места</button>
                             </footer>

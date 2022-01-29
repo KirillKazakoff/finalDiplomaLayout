@@ -1,13 +1,33 @@
 :root {
     --bg-main-filter: brightness(0) saturate(100%) invert(62%) sepia(25%) saturate(3221%)
         hue-rotate(2deg) brightness(109%) contrast(103%);
+
+    --secondary-filter: brightness(0) saturate(100%) invert(98%) sepia(0%) saturate(222%)
+        hue-rotate(195deg) brightness(83%) contrast(84%);
+
+    --secondary-arrow-filter: invert(67%) sepia(8%) saturate(137%) hue-rotate(233deg)
+        brightness(83%) contrast(92%);
 }
 
-.ic-svg-person {
-    width: 100px;
+.ic-refresh {
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
-.ic-svg-person:hover {
-    filter: brightness(0) saturate(100%) invert(62%) sepia(25%) saturate(3221%)
-        hue-rotate(2deg) brightness(109%) contrast(103%);
+.train-wrapper {
+    padding: 17px 21px;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+.ic-secondary {
+    filter: var(--secondary-filter);
+}
+
+.ic-arrow-station-prev {
+    filter: var(--secondary-arrow-filter);
+}
+
+.ic-main:hover {
+    filter: var(--bg-main-filter);
 }
