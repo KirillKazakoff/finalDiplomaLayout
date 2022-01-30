@@ -14,10 +14,16 @@
     margin-right: 2px;
 }
 
-.train-wrapper {
-    padding: 17px 21px;
-    border: 2px solid white;
-    border-radius: 50px;
+.ic-subtle-arrow-sm {
+    height: 25px;
+}
+
+.ic-subtle-arrow-lg {
+    height: 60px;
+}
+
+.ic-train-sm {
+    height: 20px;
 }
 
 .ic-secondary {
@@ -29,5 +35,9 @@
 }
 
 .ic-main:hover {
+    filter: var(--bg-main-filter);
+}
+
+.filter-main {
     filter: var(--bg-main-filter);
 }

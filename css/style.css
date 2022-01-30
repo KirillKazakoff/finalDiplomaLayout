@@ -1,6 +1,8 @@
 :root {
     --main-left-padding: 260px;
     --main-right-padding: 140px;
+    --places-padding: 20px;
+
     --progress-border: 40px;
     --space-row: 25px;
 
@@ -43,6 +45,11 @@ body {
     padding-left: var(--main-left-padding);
 }
 
+.framed-places {
+    padding-right: var(--places-padding);
+    padding-left: var(--places-padding);
+}
+
 .btn {
     border-radius: 5px;
     text-transform: uppercase;
@@ -66,6 +73,20 @@ body {
     padding-top: 15px;
     padding-bottom: 15px;
     font-weight: 900;
+}
+
+.train-wrapper {
+    border-radius: 50px;
+}
+
+.train-wrapper-lg {
+    border: 2px solid white;
+    padding: 17px 21px;
+}
+
+.train-wrapper-sm {
+    padding: 5px 7px;
+    border: 3px solid var(--bg-main);
 }
 
 /* header */
@@ -214,7 +235,7 @@ body {
 }
 
 /* main */
-.section-central {
+.main-central {
     display: flex;
     column-gap: 100px;
 
@@ -301,16 +322,6 @@ body {
     display: flex;
     align-items: center;
     column-gap: 15px;
-}
-
-.subtle-arrow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 25px;
-    background-color: var(--bg-main);
-    border-radius: 5px;
 }
 
 .subtle-time-desc {
@@ -629,6 +640,57 @@ body {
     padding: 5px 20px;
 }
 
+/* places */
+.places-title {
+    color: var(--black);
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.places-container {
+    border: 1px solid #c4c4c4;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    padding-top: 35px;
+    padding-bottom: 60px;
+}
+
+.places-choose {
+    display: flex;
+    column-gap: 10px;
+}
+
+.btn-choose-another-train {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--black);
+    border: 1px solid #292929;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-transform: none;
+}
+
+/* places-ticket-info */
+.places-ticket-info {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+    background-color: var(--bg-central);
+    padding: 15px 15px 25px 15px;
+}
+
+.places-ticket-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 25px;
+    padding-right: 15px;
+    border-right: 1px solid #ffffff;
+}
+
+/* main-page */
 /* about-section */
 .about {
     margin-top: 145px;

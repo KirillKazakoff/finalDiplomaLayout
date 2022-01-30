@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "browser-sync start --server --w ./"
+        "start": "browser-sync start --server --w ./",
+        "start2": "browser-sync start --server --w ./ --port=3001"
     },
     "author": "",
     "license": "ISC",
