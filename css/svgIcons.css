@@ -26,7 +26,11 @@
     height: 20px;
 }
 
-.ic-secondary {
+.ic-carriage-type {
+    height: 50px;
+}
+
+.filter-secondary {
     filter: var(--secondary-filter);
 }
 
