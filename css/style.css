@@ -678,18 +678,44 @@ body {
     justify-content: flex-start;
     margin-top: 30px;
     background-color: var(--bg-central);
-    padding: 15px 15px 25px 15px;
 }
 
-.places-ticket-info {
+.places-ticket-info-part {
     display: flex;
-    justify-content: center;
     align-items: center;
     column-gap: 25px;
-    padding-right: 15px;
+    padding: 15px;
     border-right: 1px solid #ffffff;
 }
 
+.places-ticket-info-part:last-child {
+    border: none;
+}
+
+.places-ticket-info-part-direction {
+    display: block;
+    flex-grow: 1;
+}
+
+.places-ticket-info-part-time {
+    width: 25%;
+}
+
+.places-ticket-direction {
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.places-travel-time {
+    flex-grow: 1;
+    justify-content: center;
+    display: flex;
+    column-gap: 10px;
+}
+
+.places-travel-time-desc {
+    width: 100px;
+}
 /* main-page */
 /* about-section */
 .about {

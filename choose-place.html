@@ -211,12 +211,12 @@
                 <h2 class='places-title'>Выбор мест</h2>
                 <div class='places-container'>
                     <header class='places-header'>
-                        <section class='places-section places-section-choose framed-places'>
+                        <section class='places-choose framed-places'>
                             <img class='ic-subtle-arrow-lg' src='./svg/arrows/arrow-subtle-time-to.svg' alt='arrow-to'>
                             <button class='btn btn-choose-another-train'>Выбрать другой поезд</button>
                         </section>
-                        <section class='places-section places-section-ticket-info framed-places'>
-                            <div class='places-section-ticket-info-part'>
+                        <section class='places-ticket-info framed-places'>
+                            <div class='places-ticket-info-part places-ticket-info-part-train'>
                                 <div class='train-wrapper train-wrapper-sm'>
                                     <img class='ic-train-sm filter-main' src='./svg/train.svg' alt='train'>
                                 </div>
@@ -238,7 +238,32 @@
                                     </ul>
                                 </div>
                             </div>
+                            <div class='places-ticket-info-part places-ticket-info-part-direction'>
+                                <div class='ticket-direction places-ticket-direction'>
+                                    <div class='ticket-info ticket-from'>
+                                        <span class='ticket-time ticket-time-from'>00:10</span>
+                                        <span class='ticket-city ticket-city-from'>Москва</span>
+                                        <span class='ticket-station ticket-station-from'>Курский вокзал</span>
+                                    </div>
+
+                                    <img src='./svg/arrows/arrow-travel-time-to.svg'
+                                        style='position: relative; left: -40px;' alt='arrow-to'>
+
+                                    <div class='ticket-info ticket-to'>
+                                        <span class='ticket-time ticket-time-to'>09:52</span>
+                                        <span class='ticket-city ticket-city-to'>Санкт-Петербург</span>
+                                        <span class='ticket-station ticket-station-to'>Ладожский вокзал</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='places-ticket-info-part places-ticket-info-part-time'>
+                                <div class='places-travel-time'>
+                                    <img class='ic-time filter-main' src='./svg/clock.svg' alt='clock'>
+                                    <span class='places-travel-time-desc'>9 часов 42 минуты</span>
+                                </div>
+                            </div>
                         </section>
+
                     </header>
                 </div>
             </div>
