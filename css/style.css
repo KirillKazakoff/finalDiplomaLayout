@@ -716,6 +716,17 @@ body {
 .places-travel-time-desc {
     width: 100px;
 }
+
+/* places-quantity-section */
+.places-quantity-section {
+    margin-top: 40px;
+}
+
+.places-section-title {
+    font-size: 30px;
+    font-weight: 500;
+}
+
 /* main-page */
 /* about-section */
 .about {
