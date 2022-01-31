@@ -1,4 +1,10 @@
 :root {
+    --black-filter: brightness(0) saturate(100%) invert(13%) sepia(9%) saturate(0%)
+        hue-rotate(240deg) brightness(107%) contrast(95%);
+
+    --white-filter: brightness(0) saturate(100%) invert(100%) sepia(93%) saturate(0%)
+        hue-rotate(201deg) brightness(106%) contrast(106%);
+
     --bg-main-filter: brightness(0) saturate(100%) invert(62%) sepia(25%) saturate(3221%)
         hue-rotate(2deg) brightness(109%) contrast(103%);
 
@@ -30,8 +36,12 @@
     height: 50px;
 }
 
-.filter-secondary {
-    filter: var(--secondary-filter);
+.ic-carriage-info-service {
+    filter: var(--black-filter);
+}
+
+.ic-carriage-info-service:hover {
+    filter: var(--white-filter);
 }
 
 .ic-arrow-station-prev {
@@ -40,6 +50,19 @@
 
 .ic-main:hover {
     filter: var(--bg-main-filter);
+}
+
+/* filters */
+.filter-black {
+    filter: var(--black-filter);
+}
+
+.filter-white {
+    filter: var(--white-filter);
+}
+
+.filter-secondary {
+    filter: var(--secondary-filter);
 }
 
 .filter-main {
