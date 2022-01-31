@@ -138,17 +138,17 @@
                     <div class='slider-plug'></div>
                 </div>
                 <div class='trip-section trip-section-subtle'>
-                    <div class='subtle-time-container'>
+                    <div class='subtle-container'>
                         <img class='ic-subtle-arrow-sm' src='./svg/arrows/arrow-subtle-time-to.svg' alt='arrow-to'>
-                        <div class='subtle-time-desc'>Туда</div>
-                        <div class='subtle-time-collapse'>+</div>
+                        <div class='subtle-desc'>Туда</div>
+                        <div class='subtle-collapse'>+</div>
                     </div>
                 </div>
                 <div class='trip-section trip-section-subtle'>
-                    <div class='subtle-time-container'>
+                    <div class='subtle-container'>
                         <img class='ic-subtle-arrow-sm' src='./svg/arrows/arrow-subtle-time-from.svg' alt='arrow-from'>
-                        <div class='subtle-time-desc'>Обратно</div>
-                        <div class='subtle-time-collapse'>+</div>
+                        <div class='subtle-desc'>Обратно</div>
+                        <div class='subtle-collapse'>+</div>
                     </div>
                 </div>
             </div>
@@ -209,7 +209,7 @@
         <section class='content-central'>
             <div class='places'>
                 <h2 class='places-title'>Выбор мест</h2>
-                <div class='places-container'>
+                <div class='places-container places-container-to'>
                     <header class='places-header-section'>
                         <div class='places-choose framed-places'>
                             <img class='ic-subtle-arrow-lg' src='./svg/arrows/arrow-subtle-time-to.svg' alt='arrow-to'>
@@ -391,7 +391,110 @@
                         </div>
                     </section>
                 </div>
+
+                <div class='places-container places-container-from'>
+                    <header class='places-header-section'>
+                        <div class='places-choose places-choose-from framed-places'>
+                            <img class='ic-subtle-arrow-lg' src='./svg/arrows/arrow-subtle-time-from.svg'
+                                alt='arrow-to'>
+                            <button class='btn btn-choose-another-train'>Выбрать другой поезд</button>
+                        </div>
+                        <div class='places-ticket-info framed-places'>
+                            <div class='places-ticket-info-part places-ticket-info-part-train'>
+                                <div class='train-wrapper train-wrapper-sm'>
+                                    <img class='ic-train-sm filter-main' src='./svg/train.svg' alt='train'>
+                                </div>
+                                <div class='train-info'>
+                                    <div class='train-number'>116C</div>
+                                    <ul class='train-stations'>
+                                        <li class='train-station train-station-previous'>
+                                            <span class='train-station-desc'>Адлер</span>
+                                            <img class='ic-arrow-station-prev' src='./svg/arrows/arrow-station.svg'
+                                                alt='arrow'>
+                                        </li>
+                                        <li class='train-station train-station-next'>
+                                            <span class='train-station-desc'>Москва</span>
+                                            <img src='./svg/arrows/arrow-station.svg' alt='arrow'>
+                                        </li>
+                                        <li class='train-station train-station-next'>
+                                            <span class='train-station-desc'>Санкт-Петербург</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class='places-ticket-info-part places-ticket-info-part-direction'>
+                                <div class='ticket-direction places-ticket-direction'>
+                                    <div class='ticket-info ticket-from'>
+                                        <span class='ticket-time ticket-time-from'>00:10</span>
+                                        <span class='ticket-city ticket-city-from'>Москва</span>
+                                        <span class='ticket-station ticket-station-from'>Курский вокзал</span>
+                                    </div>
+
+                                    <img src='./svg/arrows/arrow-travel-time-to.svg'
+                                        style='position: relative; left: -40px;' alt='arrow-to'>
+
+                                    <div class='ticket-info ticket-to'>
+                                        <span class='ticket-time ticket-time-to'>09:52</span>
+                                        <span class='ticket-city ticket-city-to'>Санкт-Петербург</span>
+                                        <span class='ticket-station ticket-station-to'>Ладожский вокзал</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='places-ticket-info-part places-ticket-info-part-time'>
+                                <div class='places-travel-time'>
+                                    <img class='ic-time filter-main' src='./svg/clock.svg' alt='clock'>
+                                    <span class='places-travel-time-desc'>9 часов 42 минуты</span>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <section class='places-section places-section-quantity'>
+                        <h2 class='places-section-title framed-places'>Количество билетов</h2>
+                        <div class='places-quantity-info'>
+                            <div class='places-quantity-info-col'>
+                                <div class='places-quantity-info-col-container'>
+                                    <div class='places-age-info'>Взрослых - 2</div>
+                                    <div class='places-age-info-desc'>Можно добавить еще 3 пассажиров</div>
+                                </div>
+                            </div>
+                            <div class='places-quantity-info-col'>
+                                <div class='places-quantity-info-col-container'>
+                                    <div class='places-age-info'>Детских - 1</div>
+                                    <div class='info-desc info-secondary'>Можно добавить еще 3 детей до 10 лет.Свое
+                                        место в вагоне, как у взрослых, но дешевле в среднем на 50-65%</div>
+                                </div>
+                            </div>
+                            <div class='places-quantity-info-col'>
+                                <div class='places-quantity-info-col-container'>
+                                    <div class='places-age-info'>Детских &#xabбез места&#xbb - 0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class='places-section places-section-carriage'>
+                        <h2 class='places-section-title framed-places'>Тип вагона</h2>
+                        <ul class='carriage-types'>
+                            <li class='carriage-type filter-secondary'>
+                                <img class='ic-carriage-type' src='./svg/features/person.svg' alt=''>
+                                <span class='carriage-type-title'>Сидячий</span>
+                            </li>
+                            <li class='carriage-type filter-secondary'>
+                                <img class='ic-carriage-type' src='./svg/features/plaz.svg' alt=''>
+                                <span class='carriage-type-title'>Плацкарт</span>
+                            </li>
+                            <li class='carriage-type filter-secondary'>
+                                <img class='ic-carriage-type' src='./svg/features/coupe.svg' alt=''>
+                                <span class='carriage-type-title'>Купе</span>
+                            </li>
+                            <li class='carriage-type filter-secondary'>
+                                <img class='ic-carriage-type' src='./svg/features/star.svg' alt=''>
+                                <span class='carriage-type-title'>Люкс</span>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
             </div>
+            <button class='btn btn-to-passengers'><a href='/passengers.html'>Далее</a></button>
         </section>
     </main>
 </body>

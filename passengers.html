@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Diploma layout</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel='stylesheet' href='/css/defaultStyle.css'>
+    <link rel='stylesheet' href='/css/fonts.css'>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel='stylesheet' href='/css/progressLine.css'>
+    <link rel='stylesheet' href='/css/svgIcons.css'>
+</head>
+
+<body>
+    <header class='header header-central'>
+        <nav class='nav'>
+            <div class='logo logo-header'>Лого</div>
+            <ul class='nav-list'>
+                <li class='nav-item'><a href='#' class='nav-link'>О нас</a></li>
+                <li class='nav-item'><a href='/find-train.html' class='nav-link'>Как это работает</a></li>
+                <li class='nav-item'><a href='#' class='nav-link'>Отзывы</a></li>
+                <li class='nav-item'><a href='#' class='nav-link'>Контакты</a></li>
+            </ul>
+        </nav>
+
+        <form class='header-form-inline'>
+            <div class='form-row form-row-inline'>
+                <h2 class='row-title'>Направление</h2>
+                <div class='input-wrapper'>
+                    <input placeholder='Откуда' class='input input-from'>
+                    <img src='./svg/location.svg' height='30px' alt=''>
+                </div>
+                <img class='ic-refresh' src='./svg/refresh.svg' width='25px' alt=''>
+                <div class='input-wrapper'>
+                    <input placeholder='Куда' class='input input-to'>
+                    <img src='./svg/location.svg' height='30px' alt=''>
+                </div>
+            </div>
+
+            <div class='form-row form-row-inline'>
+                <h2 class='row-title'>Дата</h2>
+                <div class='input-wrapper'>
+                    <input placeholder='ДД/ММ/ГГ' class='input input-from'>
+                    <img src="./svg/calendar.svg" height='30px' alt="">
+                </div>
+                <span class='space-row'></span>
+                <div class='input-wrapper'>
+                    <input placeholder='ДД/ММ/ГГ' class='input input-to'>
+                    <img src="./svg/calendar.svg" height='30px' alt="">
+                </div>
+            </div>
+            <button class='btn find-tickets-btn find-tickets-btn-inline'>
+                <a href='./choose-place.html'>Найти билеты</a>
+            </button>
+        </form>
+
+
+        <div class='progress-line'>
+            <div class='bar '>
+                <div class='bar-count'>1</div>
+                <div class='bar-desc'>Билеты</div>
+            </div>
+            <div class='bar bar-active'>
+                <div class='bar-count'>2</div>
+                <div class='bar-desc'>Пассажиры</div>
+            </div>
+            <div class='bar'>
+                <div class='bar-count'>3</div>
+                <div class='bar-desc'>Оплата</div>
+            </div>
+            <div class='bar'>
+                <div class='bar-count'>4</div>
+                <div class='bar-desc'>Проверка</div>
+            </div>
+        </div>
+    </header>
+    <main class='main main-central framed'>
+        <aside class='aside-central'>
+            <div class='aside-part aside-part-trip'>
+                <div class='trip-section'>
+                    <h1 class='trip-details-title'>Детали поездки</h1>
+                </div>
+                <section class='trip-section trip-section-subtle'>
+                    <div class='subtle-container'>
+                        <img class='ic-subtle-arrow-sm' src='./svg/arrows/arrow-subtle-time-to.svg' alt='arrow-to'>
+                        <span class='subtle-desc'>Туда</span>
+                        <span class='subtle-time-date'>30.08.2018</span>
+                        <span class='subtle-collapse substract'>-</span>
+                    </div>
+                    <div class='trip-details'>
+                        <div class='trip-details-train'>
+                            <div class='trip-details-row'>
+                                <span class='train-number-desc'>№ Поезда</span>
+                                <span class='train-number train-number-details'>116C</span>
+                            </div>
+                            <div class='trip-details-row trip-details-row-routes'>
+                                <span class='train-title-desc'>Название</span>
+                                <ul class='train-routes-details'>
+                                    <li class='train-route-details'>Адлер</li>
+                                    <li class='train-route-details'>Санкт-Петербург</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class='trip-details-destination'>
+                            <div class='trip-details-row trip-details-row-time'>
+                                <div class='trip-details-time-container'>
+                                    <span class='clock-time-details'>00:10</span>
+                                    <span class='date-details'>30.08.2018</span>
+                                </div>
+                                <div class='travel-time details-travel-time'>
+                                    <span class='travel-time-desc details-travel-time-desc'>9 : 42</span>
+                                    <img src='./svg/arrows/arrow-travel-time-to.svg' alt='arrow-to'>
+                                </div>
+                                <div class='trip-details-time-container trip-details-time-container-right'>
+                                    <span class='clock-time-details'>00:10</span>
+                                    <span class='date-details'>30.08.2018</span>
+                                </div>
+                            </div>
+                            <div class='trip-details-row trip-details-row-stations'>
+                                <div class='trip-details-station-container'>
+                                    <span class='station-city'>Москва</span>
+                                    <span class='station-name'>Курский вокзал</span>
+                                </div>
+                                <div class='trip-details-station-container trip-details-station-container-right'>
+                                    <span class='station-city'>Санкт-Петербург</span>
+                                    <span class='station-name'>Ладожский вокзал</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class='trip-section trip-section-subtle'>
+                    <div class='subtle-container'>
+                        <img class='ic-subtle-arrow-sm' src='./svg/arrows/arrow-subtle-time-from.svg' alt='arrow-to'>
+                        <span class='subtle-desc'>Обратно</span>
+                        <span class='subtle-time-date'>09.09.2018</span>
+                        <span class='subtle-collapse substract'>-</span>
+                    </div>
+                    <div class='trip-details'>
+                        <div class='trip-details-train'>
+                            <div class='trip-details-row'>
+                                <span class='train-number-desc'>№ Поезда</span>
+                                <span class='train-number train-number-details'>116C</span>
+                            </div>
+                            <div class='trip-details-row trip-details-row-routes'>
+                                <span class='train-title-desc'>Название</span>
+                                <ul class='train-routes-details'>
+                                    <li class='train-route-details'>Адлер</li>
+                                    <li class='train-route-details'>Санкт-Петербург</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class='trip-details-destination'>
+                            <div class='trip-details-row trip-details-row-time'>
+                                <div class='trip-details-time-container'>
+                                    <span class='clock-time-details'>00:10</span>
+                                    <span class='date-details'>30.08.2018</span>
+                                </div>
+                                <div class='travel-time details-travel-time'>
+                                    <span class='travel-time-desc details-travel-time-desc'>9 : 42</span>
+                                    <img src='./svg/arrows/arrow-travel-time-from.svg' alt='arrow-to'>
+                                </div>
+                                <div class='trip-details-time-container trip-details-time-container-right'>
+                                    <span class='clock-time-details'>00:10</span>
+                                    <span class='date-details'>30.08.2018</span>
+                                </div>
+                            </div>
+                            <div class='trip-details-row trip-details-row-stations'>
+                                <div class='trip-details-station-container'>
+                                    <span class='station-city'>Москва</span>
+                                    <span class='station-name'>Курский вокзал</span>
+                                </div>
+                                <div class='trip-details-station-container trip-details-station-container-right'>
+                                    <span class='station-city'>Санкт-Петербург</span>
+                                    <span class='station-name'>Ладожский вокзал</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class='trip-section trip-section-subtle'>
+                    <div class='subtle-container'>
+                        <img class='ic-subtle-passenger-sm' src='./svg/passenger.svg' alt='arrow-to'>
+                        <span class='subtle-desc'>Пассажиры</span>
+                        <span class='subtle-collapse substract'>-</span>
+                    </div>
+                    <div class='trip-details'>
+                        <div class='trip-details-passengers'>
+                            <div class='trip-details-row trip-details-row-passengers'>
+                                <span class='details-person-age'>2 Взрослых</span>
+                                <div class='details-cost-count-container'>
+                                    <span class='details-cost-count'>5 840</span>
+                                    <span class='details-cost-money-symbol'>&#8381</span>
+                                </div>
+                            </div>
+                            <div class='trip-details-row trip-details-row-passengers'>
+                                <span class='details-person-age'>1 Ребенок</span>
+                                <div class='details-cost-count-container'>
+                                    <span class='details-cost-count'>1 920</span>
+                                    <span class='details-cost-money-symbol'>&#8381</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class='trip-section trip-section-subtle'>
+                    <div class='subtle-container total-subtle-container'>
+                        <h2 class='total-passengers'>Итог</h2>
+                        <div class='total-cost-count-container'>
+                            <span class='total-cost-count'>7 760</span>
+                            <span class='total-cost-money-symbol'>&#8381</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </aside>
+    </main>
+</body>
+
+</html>

@@ -8,6 +8,8 @@
 
     --secondary: #928f94;
     --secondary-lighter: #c4c4c4;
+    --secondary-super-light: #e5e5e5;
+
     --black: #292929;
     --black-light: #3e3c41;
     --bg-main: #ffa800;
@@ -35,12 +37,6 @@ body {
     background-size: cover;
 }
 
-/* common */
-/* .section {
-    padding-right: var(--main-right-padding);
-    padding-left: var(--main-left-padding);
-} */
-
 .framed {
     padding-right: var(--main-right-padding);
     padding-left: var(--main-left-padding);
@@ -49,6 +45,14 @@ body {
 .framed-places {
     padding-right: var(--places-padding);
     padding-left: var(--places-padding);
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
 }
 
 .btn {
@@ -236,6 +240,24 @@ body {
 }
 
 /* main */
+/* main-common-styles */
+.train-number {
+    color: var(--black-light);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.train-station {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 16px;
+}
+
+.train-station-previous {
+    color: var(--secondary);
+}
+
 .main-central {
     display: flex;
     column-gap: 100px;
@@ -315,34 +337,44 @@ body {
 
 /* subtle-time */
 .trip-section-subtle {
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.subtle-time-container {
+.subtle-container {
     display: flex;
     align-items: center;
     column-gap: 15px;
 }
 
-.subtle-time-desc {
+.subtle-desc {
     flex-grow: 1;
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
-.subtle-time-collapse {
+.subtle-time-date {
+    margin-top: 7px;
+    flex-grow: 100;
+}
+
+.subtle-collapse {
     display: flex;
     align-items: center;
     justify-content: center;
 
     width: 20px;
     height: 20px;
-    border: 2px solid #ffffff;
+    color: var(--secondary-lighter);
+    border: 2px solid var(--secondary-lighter);
     border-radius: 5px;
     background-position: center;
     font-size: 23px;
     padding: 9px;
+}
+
+.substract {
+    font-size: 35px;
 }
 
 /* last-tickets */
@@ -503,23 +535,6 @@ body {
     min-width: 200px;
     padding: 30px 20px;
     background-color: #e4e0e9;
-}
-
-.train-number {
-    color: var(--black-light);
-    font-size: 24px;
-    font-weight: 500;
-}
-
-.train-station {
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
-    font-size: 16px;
-}
-
-.train-station-previous {
-    color: var(--secondary);
 }
 
 /* .ticket-center */
@@ -938,6 +953,180 @@ body {
     border-radius: 5px;
     background: #f3f3f3;
     margin-left: auto;
+}
+
+/* places-container-from */
+.places-container-from {
+    margin-top: 30px;
+}
+
+.places-choose-from {
+    justify-content: flex-end;
+}
+
+/* btn-to-passengers */
+.btn-to-passengers {
+    width: 20%;
+    color: white;
+    padding: 15px 70px;
+    background-color: var(--bg-main);
+    margin-left: auto;
+    margin-top: 100px;
+    margin-bottom: 120px;
+}
+
+/* passengers-page */
+.trip-details-title {
+    font-size: 30px;
+    font-weight: 400;
+    color: #e5e5e5;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+/* trip-details */
+.trip-details-train {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-top: 55px;
+}
+
+.trip-details-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.train-number-desc {
+    color: var(--secondary-super-light);
+}
+
+.train-number-details {
+    color: white;
+}
+
+/* trip-stations */
+.trip-details-row-routes {
+    align-items: flex-start;
+}
+
+.train-title-desc {
+    color: var(--secondary-super-light);
+}
+
+.train-route-details {
+    align-self: flex-start;
+    text-align: right;
+    font-weight: 400;
+    color: white;
+}
+
+/* trip-details-destination */
+.trip-details-destination {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    margin-top: 70px;
+}
+
+.trip-details-time-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.trip-details-time-container-right {
+    text-align: right;
+}
+
+.clock-time-details {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.date-details {
+    color: var(--secondary);
+}
+
+.details-travel-time {
+    align-self: flex-start;
+    top: -23px;
+    left: 0px;
+}
+
+.details-person-age {
+    color: var(--secondary-super-light);
+}
+
+.details-travel-time-desc {
+    color: var(--secondary-super-light);
+}
+
+.trip-details-row-stations {
+    align-items: flex-start;
+}
+
+.trip-details-station-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.trip-details-station-container-right {
+    align-items: flex-end;
+    text-align: right;
+}
+
+.station-name {
+    width: 70%;
+    color: var(--secondary);
+}
+
+/* details-passengers */
+.trip-details-passengers {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin-top: 35px;
+}
+
+.details-cost-count-container {
+    font-size: 24px;
+}
+
+.details-cost-count {
+    font-weight: 500;
+}
+
+.details-cost-money-symbol {
+    color: var(--secondary);
+}
+
+/* total passenger */
+.total-subtle-container {
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.total-passengers {
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.total-cost-count-container {
+    font-size: 48px;
+}
+
+.total-cost-count {
+    color: var(--bg-main);
+    font-weight: 500;
+}
+
+.total-cost-money-symbol {
+    color: var(--secondary-super-light);
 }
 
 /* main-page */
