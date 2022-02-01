@@ -222,8 +222,8 @@
         <section class='content-central'>
             <div class='passengers'>
                 <form class='passenger-form shadowed'>
-                    <header class='passenger-form-header framed-passengers'>
-                        <button class='passenger-collapse'>
+                    <header class='passenger-header framed-passengers'>
+                        <button class='passenger-collapse passenger-collapse-minus'>
                             <img src='./svg/actions/minus.svg' alt='collapse-minus'>
                         </button>
                         <span class='passenger-desc'>Пассажир 1</span>
@@ -320,7 +320,24 @@
                         <button class='btn btn-passenger-next'>Следующий пассажир</button>
                     </section>
                 </form>
+
+                <form class='passenger-form shadowed'>
+                    <header class='passenger-header framed-passengers'>
+                        <button class='passenger-collapse passenger-collapse-plus'>
+                            <img src='./svg/actions/plus.svg' alt='collapse-minus'>
+                        </button>
+                        <span class='passenger-desc'>Пассажир 2</span>
+                    </header>
+                </form>
+
+                <header class='passenger-header framed-passengers shadowed'>
+                    <span class='passenger-desc'>Добавить пассажира</span>
+                    <button class='passenger-add'>
+                        <img src='./svg/actions/plus.svg' alt='plus'>
+                    </button>
+                </header>
             </div>
+            <button class='btn passengers-btn-next-section'>Далее</button>
         </section>
     </main>
 </body>
