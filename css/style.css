@@ -71,7 +71,6 @@ body {
     border-radius: 5px;
     text-transform: uppercase;
     cursor: pointer;
-    color: inherit;
 }
 
 .space-row {
@@ -227,7 +226,7 @@ body {
 }
 
 .input::placeholder {
-    color: #e5e5e5;
+    color: var(--secondary-lighter);
 }
 
 .find-tickets-btn {
@@ -1155,6 +1154,7 @@ body {
 }
 
 .passenger-form-section {
+    background-color: white;
     border-top: 1px dashed var(--secondary);
 }
 
@@ -1184,16 +1184,19 @@ body {
 }
 
 /* passenger-data */
-.passengers-main-data {
+.passenger-main-data {
     padding-top: 40px;
+    padding-bottom: 35px;
 }
 
 .passenger-form-row {
     display: flex;
-    align-items: center;
+    align-items: stretch;
 }
 
 .passenger-form-col {
+    display: flex;
+    flex-direction: column;
     width: 31%;
 }
 
@@ -1268,11 +1271,10 @@ body {
 /* passenger-disable */
 .passenger-disabled {
     margin-top: 45px;
-    margin-bottom: 35px;
 }
 
 .passenger-form-col-disabled {
-    display: flex;
+    flex-direction: row;
     align-items: center;
     column-gap: 15px;
 }
@@ -1282,6 +1284,61 @@ body {
     height: 28px;
     border: 1px solid var(--secondary);
     border-radius: 5px;
+}
+
+/* .passenger-document */
+.passenger-document {
+    padding-top: 35px;
+    padding-bottom: 30px;
+}
+
+.passenger-form-row-document {
+    column-gap: 35px;
+}
+
+.passenger-form-col-document {
+    width: 27%;
+}
+
+.select-doctype {
+    flex-grow: 1;
+}
+
+.selected-option-doctype {
+    font-size: 18px;
+}
+
+.option-doctype {
+    font-size: 18px;
+}
+
+.passenger-input-wrapper-number {
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.input-number {
+    letter-spacing: 24px;
+}
+
+.input-number::placeholder {
+    letter-spacing: 0;
+}
+
+/* passenger-next */
+.passenger-next {
+    padding-top: 35px;
+    padding-bottom: 30px;
+}
+
+.btn-passenger-next {
+    width: 300px;
+    margin-left: auto;
+    font-size: 24px;
+    font-weight: 500;
+    border: 1px solid #292929;
+    text-transform: unset;
+    padding: 10px 20px;
 }
 
 /* select-custom */

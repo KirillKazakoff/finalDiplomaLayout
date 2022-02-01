@@ -232,7 +232,7 @@
                         </button>
                     </header>
 
-                    <section class='passenger-form-section framed-passenger-section passengers-main-data'>
+                    <section class='passenger-form-section framed-passenger-section passenger-main-data'>
                         <div class='passenger-form-row'>
                             <div class='passenger-form-col'>
                                 <div class='passenger-input-wrapper select select-age-category'>
@@ -249,19 +249,19 @@
                             <div class='passenger-form-col'>
                                 <label class='passenger-input-label' for='second-name'>Фамилия</label>
                                 <div class='passenger-input-wrapper'>
-                                    <input id='second-name' class='input family-input'>
+                                    <input id='second-name' class='input'>
                                 </div>
                             </div>
                             <div class='passenger-form-col'>
                                 <label class='passenger-input-label' for='name'>Имя</label>
                                 <div class='passenger-input-wrapper'>
-                                    <input id='name' class='input family-input'>
+                                    <input id='name' class='input'>
                                 </div>
                             </div>
                             <div class='passenger-form-col'>
                                 <label class='passenger-input-label' for='surname'>Отчество</label>
                                 <div class='passenger-input-wrapper'>
-                                    <input id='surname' class='input family-input'>
+                                    <input id='surname' class='input'>
                                 </div>
                             </div>
                         </div>
@@ -276,7 +276,7 @@
                             <div class='passenger-form-col passenger-form-col-birthdate'>
                                 <label class='passenger-input-label' for='birthdate'>Дата рождения</label>
                                 <div class='passenger-input-wrapper'>
-                                    <input id='birthdate' class='input family-input'>
+                                    <input id='birthdate' class='input'>
                                 </div>
                             </div>
                         </div>
@@ -287,8 +287,37 @@
                             </div>
                         </div>
                     </section>
-                    <section class='passenger-form-section'>
-                        <div class='aaa'>alright well</div>
+                    <section class='passenger-form-section framed-passenger-section passenger-document'>
+                        <div class='passenger-form-row passenger-form-row-document'>
+                            <div class='passenger-form-col passenger-form-col-document'>
+                                <label class='passenger-input-label' for='docseries'>Серия</label>
+                                <div class='passenger-input-wrapper select select-doctype'>
+                                    <div class='selected-option selected-option-doctype'>Паспорт РФ</div>
+                                    <img src='./svg/actions/select-arrow.svg' alt='select-arrow'>
+                                    <ul class='options options-doctype'>
+                                        <li class='option option-doctype'>Паспорт РФ</li>
+                                        <li class='option option-doctype'>Свидетельство о рождении</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class='passenger-form-col passenger-form-col-document'>
+                                <label class='passenger-input-label' for='docseries'>Серия</label>
+                                <div class='passenger-input-wrapper passenger-input-wrapper-number'>
+                                    <input id='docseries' class='input input-number input-docseries'
+                                        placeholder='__   __   __   __'>
+                                </div>
+                            </div>
+                            <div class='passenger-form-col passenger-form-col-document'>
+                                <label class='passenger-input-label' for='docnumber'>Номер</label>
+                                <div class='passenger-input-wrapper passenger-input-wrapper-number'>
+                                    <input id='docnumber' class='input input-number input-docnumber'
+                                        placeholder='__   __   __   __   __   __'>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class='passenger-form-section framed-passenger-section passenger-next'>
+                        <button class='btn btn-passenger-next'>Следующий пассажир</button>
                     </section>
                 </form>
             </div>
