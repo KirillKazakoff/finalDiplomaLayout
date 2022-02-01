@@ -61,7 +61,8 @@ a {
     text-decoration: none;
 }
 
-img {
+img,
+label {
     display: block;
 }
 
