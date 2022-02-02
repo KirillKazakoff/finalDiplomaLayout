@@ -979,10 +979,6 @@ body {
 }
 
 /* places-section-carriage-scheme */
-.places-section-carriage-scheme {
-    margin-top: 50px;
-}
-
 .carriage-container {
     display: flex;
     align-items: flex-start;
@@ -1052,15 +1048,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    justify-content: space-between;
 }
 
-.carriage-section-rich {
+.carriage-section-bordered {
     width: 13%;
     border: var(--carriage-border) solid var(--carriage-border-color);
     border-right: none;
 }
 
-.carriage-section-rich:last-child {
+.carriage-section-bordered:last-child {
     border-right: var(--carriage-border) solid var(--carriage-border-color);
 }
 
@@ -1070,8 +1067,20 @@ body {
     justify-content: space-between;
 }
 
+.carriage-seats-area-bottom {
+    width: 100%;
+    /* flex: 1; */
+    align-self: flex-end;
+}
+
 .carriage-seats {
     border-bottom: var(--carriage-border) solid var(--carriage-border-color);
+}
+
+.carriage-seats-bottom {
+    display: flex;
+    flex: 1;
+    border-bottom: none;
 }
 
 .carriage-seat {
@@ -1079,6 +1088,14 @@ body {
     background-color: var(--secondary-super-light);
     font-weight: 700;
     font-size: 16px;
+}
+
+.carriage-seat-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    flex: 1;
 }
 
 /* btn-to-passengers */
