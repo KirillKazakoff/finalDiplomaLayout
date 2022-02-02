@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Diploma layout</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel='stylesheet' href='/css/defaultStyle.css'>
+    <link rel='stylesheet' href='/css/fonts.css'>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel='stylesheet' href='/css/progressLine.css'>
+    <link rel='stylesheet' href='/css/svgIcons.css'>
+</head>
+
+<body>
+    <header class='header header-central'>
+        <nav class='nav'>
+            <div class='logo logo-header'>Лого</div>
+            <ul class='nav-list'>
+                <li class='nav-item'><a href='#' class='nav-link'>О нас</a></li>
+                <li class='nav-item'><a href='/find-train.html' class='nav-link'>Как это работает</a></li>
+                <li class='nav-item'><a href='#' class='nav-link'>Отзывы</a></li>
+                <li class='nav-item'><a href='#' class='nav-link'>Контакты</a></li>
+            </ul>
+        </nav>
+
+        <form class='header-form-inline'>
+            <div class='form-row form-row-inline'>
+                <h2 class='row-title'>Направление</h2>
+                <div class='input-wrapper'>
+                    <input placeholder='Откуда' class='input input-from'>
+                    <img src='./svg/location.svg' height='30px' alt=''>
+                </div>
+                <img class='ic-refresh' src='./svg/actions/refresh.svg' width='25px' alt=''>
+                <div class='input-wrapper'>
+                    <input placeholder='Куда' class='input input-to'>
+                    <img src='./svg/location.svg' height='30px' alt=''>
+                </div>
+            </div>
+
+            <div class='form-row form-row-inline'>
+                <h2 class='row-title'>Дата</h2>
+                <div class='input-wrapper'>
+                    <input placeholder='ДД/ММ/ГГ' class='input input-from'>
+                    <img src="./svg/calendar.svg" height='30px' alt="">
+                </div>
+                <span class='space-row'></span>
+                <div class='input-wrapper'>
+                    <input placeholder='ДД/ММ/ГГ' class='input input-to'>
+                    <img src="./svg/calendar.svg" height='30px' alt="">
+                </div>
+            </div>
+            <button class='btn find-tickets-btn find-tickets-btn-inline'>
+                <a href='./choose-place.html'>Найти билеты</a>
+            </button>
+        </form>
+
+
+        <div class='progress-line'>
+            <div class='bar '>
+                <div class='bar-count'>1</div>
+                <div class='bar-desc'>Билеты</div>
+            </div>
+            <div class='bar bar-active'>
+                <div class='bar-count'>2</div>
+                <div class='bar-desc'>Пассажиры</div>
+            </div>
+            <div class='bar'>
+                <div class='bar-count'>3</div>
+                <div class='bar-desc'>Оплата</div>
+            </div>
+            <div class='bar'>
+                <div class='bar-count'>4</div>
+                <div class='bar-desc'>Проверка</div>
+            </div>
+        </div>
+    </header>
+    <main class='main main-central framed'>
+        <aside class='aside-central'>
+            <div class='aside-part aside-part-trip'>
+                <div class='trip-section'>
+                    <form class='trip-form'>
+                        <div class='form-row'>
+                            <h2 class='row-title row-title-small'>Дата поездки</h2>
+                            <div class='input-wrapper input-wrapper-small'>
+                                <input placeholder='ДД/ММ/ГГ' class='input input-from'>
+                                <img src="./svg/calendar.svg" height='22px' alt="">
+                            </div>
+                        </div>
+                        <div class='form-row'>
+                            <h2 class='row-title row-title-small'>Дата возвращения</h2>
+                            <div class='input-wrapper input-wrapper-small'>
+                                <input placeholder='ДД/ММ/ГГ' class='input input-from'>
+                                <img src="./svg/calendar.svg" height='22px' alt="">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class='trip-section'>
+                    <ul class='togglers'>
+                        <li class='toggler-container'>
+                            <img src='./svg/features/coupe.svg' alt='coupe'>
+                            <div class='toggler-desc'>Купе</div>
+                            <div class='toggler-plug'></div>
+                        </li>
+                        <li class='toggler-container'>
+                            <img src='./svg/features/plaz.svg' alt='plaz'>
+                            <div class='toggler-desc'>Плацкарт</div>
+                            <div class='toggler-plug'></div>
+                        </li>
+                        <li class='toggler-container'>
+                            <img src='./svg/features/person.svg' alt='person'>
+                            <div class='toggler-desc'>Сидячий</div>
+                            <div class='toggler-plug'></div>
+                        </li>
+                        <li class='toggler-container'>
+                            <img src='./svg/features/star.svg' alt='star'>
+                            <div class='toggler-desc'>Люкс</div>
+                            <div class='toggler-plug'></div>
+                        </li>
+                        <li class='toggler-container'>
+                            <img src='./svg/features/wireless.svg' alt='wireless'>
+                            <div class='toggler-desc'>Wi-Fi</div>
+                            <div class='toggler-plug'></div>
+                        </li>
+                        <li class='toggler-container'>
+                            <img src='./svg/features/rocket.svg' alt='rocket'>
+                            <div class='toggler-desc'>Экспресс</div>
+                            <div class='toggler-plug'></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class='trip-section trip-section-cost'>
+                    <h2 class='row-title row-title-small cost-title'>Стоимость</h2>
+                    <div class='slider-plug'></div>
+                </div>
+                <div class='trip-section trip-section-subtle'>
+                    <div class='subtle-container'>
+                        <img class='ic-subtle-arrow-sm' src='./svg/arrows/arrow-subtle-time-to.svg' alt='arrow-to'>
+                        <div class='subtle-desc'>Туда</div>
+                        <div class='subtle-collapse'>+</div>
+                    </div>
+                </div>
+                <div class='trip-section trip-section-subtle'>
+                    <div class='subtle-container'>
+                        <img class='ic-subtle-arrow-sm' src='./svg/arrows/arrow-subtle-time-from.svg' alt='arrow-from'>
+                        <div class='subtle-desc'>Обратно</div>
+                        <div class='subtle-collapse'>+</div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <section class='content-central'>
+            <form class='passenger-form passenger-payment-form shadowed'>
+                <header class='passenger-header framed-passengers'>
+                    <span class='passenger-desc'>Персональные данные</span>
+                </header>
+                <section class='passenger-form-section framed-passenger-section passenger-payment'>
+                    <div class='passenger-form-row passenger-fullname'>
+                        <div class='passenger-form-col'>
+                            <label class='passenger-input-label label-payment'>Фамилия</label>
+                            <div class='passenger-input-wrapper'>
+                                Мартынюк
+                            </div>
+                        </div>
+                        <div class='passenger-form-col'>
+                            <label class='passenger-input-label label-payment'>Имя</label>
+                            <div class='passenger-input-wrapper'>
+                                Ирина
+                            </div>
+                        </div>
+                        <div class='passenger-form-col'>
+                            <label class='passenger-input-label label-payment'>Отчество</label>
+                            <div class='passenger-input-wrapper'>
+                                Эдуардовна
+                            </div>
+                        </div>
+                    </div>
+                    <div class='passenger-form-row passenger-phone'>
+                        <div class='passenger-form-col' style='width: 40%;'>
+                            <label class='passenger-input-label label-payment' for='phone'>Контактный телефон</label>
+                            <div class='passenger-input-wrapper'>
+                                <input id='phone' class='input input-number input-phone' placeholder='+7 ___ ___ __ __'>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='passenger-form-row passenger-mail'>
+                        <div class='passenger-form-col' style='width: 40%;'>
+                            <label class='passenger-input-label label-payment' for='mail'>E-mail</label>
+                            <div class='passenger-input-wrapper'>
+                                <input id='mail' class='input' placeholder='inbox@gmail.ru'>
+                            </div>
+                        </div>
+                </section>
+
+                <header class='passenger-header framed-passengers'>
+                    <span class='passenger-desc'>Способ оплаты</span>
+                </header>
+                <section class='passenger-form-section framed-passenger-section passenger-payment'>
+                    <div class='passenger-form-row passenger-payment-is-online'>
+                        <div class='passenger-form-col passenger-form-col-checkbox filter-secondary'>
+                            <span class='checkbox is-online-checkbox'></span>
+                            <span class='payment-checkbox-desc'>Онлайн</span>
+                        </div>
+                    </div>
+                    <div class='passenger-form-row passenger-payment-ways'>
+                        <div class='passenger-form-col passenger-form-col-payment-way'>
+                            <span class='payment-way-desc'>Банковской картой</span>
+                        </div>
+                        <div class='passenger-form-col passenger-form-col-payment-way'>
+                            <span class='payment-way-desc'>PayPal</span>
+                        </div>
+                        <div class='passenger-form-col passenger-form-col-payment-way'>
+                            <span class='payment-way-desc'>Visa QIWI Wallet</span>
+                        </div>
+                    </div>
+                </section>
+                <section class='passenger-form-section framed-passenger-section passenger-payment'>
+                    <div class='passenger-form-row passenger-payment-is-cash'>
+                        <div class='passenger-form-col passenger-form-col-checkbox filter-main'>
+                            <span class='checkbox is-cash-checkbox'>
+                                <img src='./svg/actions/tick.svg' alt='tick'>
+                            </span>
+                            <span class='payment-checkbox-desc'>Наличными</span>
+                        </div>
+                    </div>
+                </section>
+            </form>
+            <button class='btn btn-next-section'><a href='/confirmation.html'>Купить билеты</a></button>
+        </section>
+
+    </main>
+</body>
+
+</html>

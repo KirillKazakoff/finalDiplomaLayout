@@ -1335,10 +1335,6 @@ body {
     border: 1px solid var(--secondary-lighter);
 }
 
-.dashed {
-    border-bottom: 1px dashed var(--secondary);
-}
-
 .passenger-form-section {
     background-color: white;
     border-top: 1px dashed var(--secondary);
@@ -1351,6 +1347,10 @@ body {
     background-color: #f9f9f9;
     padding-top: 35px;
     padding-bottom: 35px;
+}
+
+.passenger-header:nth-child(n + 2) {
+    border-top: 1px dashed var(--secondary);
 }
 
 .passenger-collapse {
@@ -1440,7 +1440,7 @@ body {
     padding: 0;
 }
 
-.sex-checkbox {
+.sex-field {
     width: 50%;
     display: block;
     font-size: 30px;
@@ -1450,11 +1450,11 @@ body {
     text-align: center;
 }
 
-.sex-checkbox:first-child {
+.sex-field:first-child {
     border-right: 1px solid var(--secondary);
 }
 
-.sex-checkbox-active {
+.sex-field-active {
     background-color: var(--bg-main);
 }
 
@@ -1467,17 +1467,10 @@ body {
     margin-top: 45px;
 }
 
-.passenger-form-col-disabled {
+.passenger-form-col-checkbox {
     flex-direction: row;
     align-items: center;
     column-gap: 15px;
-}
-
-.disabled-checkbox {
-    width: 28px;
-    height: 28px;
-    border: 1px solid var(--secondary);
-    border-radius: 5px;
 }
 
 /* .passenger-document */
@@ -1535,16 +1528,52 @@ body {
     padding: 10px 20px;
 }
 
-.passengers-btn-next-section {
-    background-color: var(--secondary);
-    font-weight: 500;
+/* payment */
+.passenger-payment {
+    padding-bottom: 80px;
+}
+
+.passenger-phone {
+    margin-top: 60px;
+}
+
+.input-phone {
+    letter-spacing: normal;
+}
+
+.label-payment {
+    color: var(--black);
+}
+
+.passenger-mail {
+    margin-top: 40px;
+}
+
+.passenger-payment-is-online {
+    margin-top: 40px;
+}
+
+.payment-checkbox-desc {
     font-size: 24px;
-    color: white;
-    width: 230px;
-    padding: 15px 70px;
-    margin-left: auto;
-    margin-top: 100px;
-    margin-bottom: 140px;
+    font-weight: 400;
+}
+
+.passenger-payment-ways {
+    margin-top: 30px;
+    column-gap: 50px;
+}
+
+.passenger-form-col-payment-way {
+    width: 20%;
+}
+
+.payment-way-desc {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.passenger-payment-is-cash {
+    margin-top: 60px;
 }
 
 /* select-custom */
@@ -1565,6 +1594,30 @@ body {
     background-color: #f4f3f6;
     border-radius: 5px;
     filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.2));
+}
+
+/* checkbox */
+.checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+}
+
+/* btn-next-section */
+.btn-next-section {
+    background-color: var(--secondary);
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+    padding: 15px 70px;
+    margin-left: auto;
+    margin-top: 100px;
+    margin-bottom: 140px;
 }
 
 /* main-page */
