@@ -1021,6 +1021,31 @@ body {
     bottom: 0px;
 }
 
+.carriage-plaz-top-border {
+    position: absolute;
+    top: 0;
+    bottom: 43%;
+    width: var(--carriage-border);
+    background-color: var(--carriage-border-color);
+}
+
+.carriage-plaz-top-left-border {
+    left: 0;
+}
+
+.carriage-plaz-top-right-border {
+    right: 0;
+}
+
+.carriage-plaz-bottom-right-border {
+    position: absolute;
+    top: 77%;
+    bottom: 0;
+    right: 0;
+    width: var(--carriage-border);
+    background-color: var(--carriage-border-color);
+}
+
 /* passageway */
 .carriage-passageway {
     z-index: 20;
@@ -1069,7 +1094,6 @@ body {
 
 .carriage-seats-area-bottom {
     width: 100%;
-    /* flex: 1; */
     align-self: flex-end;
 }
 
@@ -1084,10 +1108,21 @@ body {
 }
 
 .carriage-seat {
-    padding: 6px 10px;
     background-color: var(--secondary-super-light);
     font-weight: 700;
     font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.carriage-seat-top-default {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.carriage-seat-top-luxe {
+    padding-top: 35px;
+    padding-bottom: 8px;
 }
 
 .carriage-seat-bottom {
@@ -1096,6 +1131,31 @@ body {
     align-items: center;
     padding: 3px;
     flex: 1;
+}
+
+/* carriage-plaz */
+.carriage-section-plaz {
+    padding: 7px 10px;
+    flex: 1;
+}
+
+.carriage-seats-area-plaz {
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.carriage-seats-row {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.carriage-seat-plaz {
+    text-align: center;
+    width: 4.3%;
+    font-size: 14px;
+    padding: 1.5px 0px;
 }
 
 /* btn-to-passengers */
