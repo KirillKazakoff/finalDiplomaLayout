@@ -6,6 +6,10 @@
     --passengers-right-padding: 30px;
 
     --progress-border: 40px;
+
+    --carriage-border: 4px;
+    --carriage-border-color: var(--secondary-lighter);
+
     --space-row: 25px;
 
     --secondary: #928f94;
@@ -972,6 +976,109 @@ body {
 
 .places-choose-from {
     justify-content: flex-end;
+}
+
+/* places-section-carriage-scheme */
+.places-section-carriage-scheme {
+    margin-top: 50px;
+}
+
+.carriage-container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.carriage-left {
+    height: 125px;
+}
+
+.carriage-right {
+    margin-top: 3px;
+    height: 120px;
+}
+
+.carriage-scheme {
+    position: relative;
+
+    display: flex;
+    align-self: stretch;
+    flex-grow: 1;
+    margin: 3px 0px 2px;
+}
+
+/* carriage-borders */
+.carriage-scheme::before,
+.carriage-scheme::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: var(--carriage-border);
+    background-color: var(--carriage-border-color);
+}
+
+.carriage-scheme::before {
+    top: 0;
+}
+.carriage-scheme::after {
+    bottom: 0px;
+}
+
+/* passageway */
+.carriage-passageway {
+    z-index: 20;
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 58%;
+    height: 18%;
+    background-color: white;
+}
+
+.carriage-bottom-cross-line {
+    position: absolute;
+    content: '';
+    top: 80%;
+    left: 0px;
+    right: 0px;
+    height: 1px;
+    background-color: var(--carriage-border-color);
+}
+
+.carriage-section {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.carriage-section-rich {
+    width: 13%;
+    border: var(--carriage-border) solid var(--carriage-border-color);
+    border-right: none;
+}
+
+.carriage-section-rich:last-child {
+    border-right: var(--carriage-border) solid var(--carriage-border-color);
+}
+
+/* carriage-seats */
+.carriage-seats-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carriage-seats {
+    border-bottom: var(--carriage-border) solid var(--carriage-border-color);
+}
+
+.carriage-seat {
+    padding: 6px 10px;
+    background-color: var(--secondary-super-light);
+    font-weight: 700;
+    font-size: 16px;
 }
 
 /* btn-to-passengers */
