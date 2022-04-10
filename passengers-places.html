@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Diploma layout</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel='stylesheet' href='/css/defaultStyle.css'>
+    <link rel='stylesheet' href='/css/fonts.css'>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel='stylesheet' href='/css/progressLine.css'>
+    <link rel='stylesheet' href='/css/svgIcons.css'>
+</head>
+
+<body>
+    <header class='header header-central'>
+        <nav class='nav'>
+            <div class='logo logo-header'>Лого</div>
+            <ul class='nav-list'>
+                <li class='nav-item'><a href='#' class='nav-link'>О нас</a></li>
+                <li class='nav-item'><a href='/find-train.html' class='nav-link'>Как это работает</a></li>
+                <li class='nav-item'><a href='#' class='nav-link'>Отзывы</a></li>
+                <li class='nav-item'><a href='#' class='nav-link'>Контакты</a></li>
+            </ul>
+        </nav>
+
+        <form class='header-form-inline'>
+            <div class='form-row form-row-inline'>
+                <h2 class='row-title'>Направление</h2>
+                <div class='input-wrapper'>
+                    <input placeholder='Откуда' class='input input-from'>
+                    <img src='./svg/location.svg' height='30px' alt=''>
+                </div>
+                <img class='ic-refresh' src='./svg/actions/refresh.svg' width='25px' alt=''>
+                <div class='input-wrapper'>
+                    <input placeholder='Куда' class='input input-to'>
+                    <img src='./svg/location.svg' height='30px' alt=''>
+                </div>
+            </div>
+
+            <div class='form-row form-row-inline'>
+                <h2 class='row-title'>Дата</h2>
+                <div class='input-wrapper'>
+                    <input placeholder='ДД/ММ/ГГ' class='input input-from'>
+                    <img src="./svg/calendar.svg" height='30px' alt="">
+                </div>
+                <span class='space-row'></span>
+                <div class='input-wrapper'>
+                    <input placeholder='ДД/ММ/ГГ' class='input input-to'>
+                    <img src="./svg/calendar.svg" height='30px' alt="">
+                </div>
+            </div>
+            <button class='btn find-tickets-btn find-tickets-btn-inline'>
+                <a href='./choose-place.html'>Найти билеты</a>
+            </button>
+        </form>
+
+
+        <div class='progress-line'>
+            <div class='bar'>
+                <div class='bar-count'>1</div>
+                <div class='bar-desc'>Билеты</div>
+            </div>
+            <div class='bar bar-active'>
+                <div class='bar-count'>2</div>
+                <div class='bar-desc'>Пассажиры</div>
+            </div>
+            <div class='bar'>
+                <div class='bar-count'>3</div>
+                <div class='bar-desc'>Оплата</div>
+            </div>
+            <div class='bar'>
+                <div class='bar-count'>4</div>
+                <div class='bar-desc'>Проверка</div>
+            </div>
+        </div>
+    </header>
+    <main class='main main-central main-pas-places framed'>
+        <div class='pas-places-dirs'>
+            <div class='pas-places-dir pas-places-dir-from'>
+                <header class='pas-places-dir-header'>
+                    <span class='pas-places-dir-header-desc'>Выберите места для пассажиров (Туда)</span>
+                </header>
+                <div class='pas-places-dir-content'>
+                    <ul class='pas-places-dir-list'>
+                        <li class='pas-plases-dir-item'>
+                            <header class='pas-places-item-header'>
+                                <span class='pas-places-item-title'>Пассажир 1</span>
+                                <div class='pas-places-item-cost'>
+                                    <span class='pas-places-item-cost-count'>800</span>
+                                    <span class='pas-places-item-cost-symbol'>Р</span>
+                                </div>
+                            </header>
+                            <div class='pas-places-item-place-info'>
+                                <div class='pas-places-item-place-infocarriage'>
+                                    <span class='pas-places-item-place-infocarriage-desc'>Вагон</span>
+                                    <span class='pas-places-item-place-infocarriage-count'>05</span>
+                                </div>
+                                <div class='pas-places-item-place-infoplace'>
+                                    <span class='pas-places-item-place-infoplace-desc'>Место</span>
+                                    <span class='pas-places-item-place-infoplace-count'>10</span>
+                                </div>
+                            </div>
+                            <ul class='pas-places-item-extras'>
+                                <li class='pas-places-item-extra pas-places-item-extra-service'>
+                                    <span class='pas-places-item-extra-desc'>Обслуживание:</span>
+                                    <span class='pas-places-item-extra-value'>ФПК</span>
+                                </li>
+                                <li class='pas-places-item-extra pas-places-item-extra-placetype'>
+                                    <span class='pas-places-item-extra-desc'>Тип:</span>
+                                    <span class='pas-places-item-extra-value'>Сидячее</span>
+                                </li>
+                                <li class='pas-places-item-extra pas-places-item-extra-extraservices'>
+                                    <span class='pas-places-item-extra-desc'>Доп.услуги:</span>
+                                    <span class='pas-places-item-extra-value'>Wi-Fi, сменное белье</span>
+                                </li>
+                            </ul>
+                            <div class='input-wrapper select-wrapper select-pas-places'>
+                                <div class='selected-option selected-option'>Генадий Гнидо Гнидус</div>
+                                <img src='./svg/actions/select-arrow.svg' alt='select-arrow'>
+                            </div>
+                        </li>
+                        <li class='pas-plases-dir-item'>
+                            <header class='pas-places-item-header'>
+                                <span class='pas-places-item-title'>Пассажир 2</span>
+                                <div class='pas-places-item-cost'>
+                                    <span class='pas-places-item-cost-count'>1 800</span>
+                                    <span class='pas-places-item-cost-symbol'>Р</span>
+                                </div>
+                            </header>
+                            <div class='pas-places-item-place-info'>
+                                <div class='pas-places-item-place-infocarriage'>
+                                    <span class='pas-places-item-place-infocarriage-desc'>Вагон</span>
+                                    <span class='pas-places-item-place-infocarriage-count'>07</span>
+                                </div>
+                                <div class='pas-places-item-place-infoplace'>
+                                    <span class='pas-places-item-place-infoplace-desc'>Место</span>
+                                    <span class='pas-places-item-place-infoplace-count'>09</span>
+                                </div>
+                            </div>
+                            <ul class='pas-places-item-extras'>
+                                <li class='pas-places-item-extra pas-places-item-extra-service'>
+                                    <span class='pas-places-item-extra-desc'>Обслуживание:</span>
+                                    <span class='pas-places-item-extra-value'>ФПК</span>
+                                </li>
+                                <li class='pas-places-item-extra pas-places-item-extra-placetype'>
+                                    <span class='pas-places-item-extra-desc'>Тип:</span>
+                                    <span class='pas-places-item-extra-value'>Купе</span>
+                                </li>
+                                <li class='pas-places-item-extra pas-places-item-extra-extraservices'>
+                                    <span class='pas-places-item-extra-desc'>Доп.услуги:</span>
+                                    <span class='pas-places-item-extra-value'>нет</span>
+                                </li>
+                            </ul>
+                            <div class='input-wrapper select-wrapper select-pas-places'>
+                                <div class='selected-option selected-option'>Сусик Чупс Годзе</div>
+                                <img src='./svg/actions/select-arrow.svg' alt='select-arrow'>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class='pas-places-add-passenger'>
+                        <img src='./svg/arrows/arrow-subtle-rect-to.svg' alt='arrow-subtle' class='pas-places-add-icon'>
+                        <button class='btn btn-pas-places-add-passenger'>Добавить пассажиров</button>
+                    </div>
+                </div>
+            </div>
+            <div class='pas-places-dir pas-places-dir-to'>
+                <header class='pas-places-dir-header'>
+                    <span class='pas-places-dir-header-desc'>Выберите места для пассажиров (Обратно)</span>
+                </header>
+                <div class='pas-places-dir-content'>
+                    <ul class='pas-places-dir-list'>
+                        <li class='pas-plases-dir-item'>
+                            <header class='pas-places-item-header'>
+                                <span class='pas-places-item-title'>Пассажир 1</span>
+                                <div class='pas-places-item-cost'>
+                                    <span class='pas-places-item-cost-count'>800</span>
+                                    <span class='pas-places-item-cost-symbol'>Р</span>
+                                </div>
+                            </header>
+                            <div class='pas-places-item-place-info'>
+                                <div class='pas-places-item-place-infocarriage'>
+                                    <span class='pas-places-item-place-infocarriage-desc'>Вагон</span>
+                                    <span class='pas-places-item-place-infocarriage-count'>05</span>
+                                </div>
+                                <div class='pas-places-item-place-infoplace'>
+                                    <span class='pas-places-item-place-infoplace-desc'>Место</span>
+                                    <span class='pas-places-item-place-infoplace-count'>10</span>
+                                </div>
+                            </div>
+                            <ul class='pas-places-item-extras'>
+                                <li class='pas-places-item-extra pas-places-item-extra-service'>
+                                    <span class='pas-places-item-extra-desc'>Обслуживание:</span>
+                                    <span class='pas-places-item-extra-value'>ФПК</span>
+                                </li>
+                                <li class='pas-places-item-extra pas-places-item-extra-placetype'>
+                                    <span class='pas-places-item-extra-desc'>Тип:</span>
+                                    <span class='pas-places-item-extra-value'>Сидячее</span>
+                                </li>
+                                <li class='pas-places-item-extra pas-places-item-extra-extraservices'>
+                                    <span class='pas-places-item-extra-desc'>Доп.услуги:</span>
+                                    <span class='pas-places-item-extra-value'>Wi-Fi, сменное белье</span>
+                                </li>
+                            </ul>
+                            <div class='input-wrapper select-wrapper select-pas-places'>
+                                <div class='selected-option selected-option'>Генадий Гнидо Гнидус</div>
+                                <img src='./svg/actions/select-arrow.svg' alt='select-arrow'>
+                            </div>
+                        </li>
+                        <li class='pas-plases-dir-item'>
+                            <header class='pas-places-item-header'>
+                                <span class='pas-places-item-title'>Пассажир 2</span>
+                                <div class='pas-places-item-cost'>
+                                    <span class='pas-places-item-cost-count'>1 800</span>
+                                    <span class='pas-places-item-cost-symbol'>Р</span>
+                                </div>
+                            </header>
+                            <div class='pas-places-item-place-info'>
+                                <div class='pas-places-item-place-infocarriage'>
+                                    <span class='pas-places-item-place-infocarriage-desc'>Вагон</span>
+                                    <span class='pas-places-item-place-infocarriage-count'>07</span>
+                                </div>
+                                <div class='pas-places-item-place-infoplace'>
+                                    <span class='pas-places-item-place-infoplace-desc'>Место</span>
+                                    <span class='pas-places-item-place-infoplace-count'>09</span>
+                                </div>
+                            </div>
+                            <ul class='pas-places-item-extras'>
+                                <li class='pas-places-item-extra pas-places-item-extra-service'>
+                                    <span class='pas-places-item-extra-desc'>Обслуживание:</span>
+                                    <span class='pas-places-item-extra-value'>ФПК</span>
+                                </li>
+                                <li class='pas-places-item-extra pas-places-item-extra-placetype'>
+                                    <span class='pas-places-item-extra-desc'>Тип:</span>
+                                    <span class='pas-places-item-extra-value'>Купе</span>
+                                </li>
+                                <li class='pas-places-item-extra pas-places-item-extra-extraservices'>
+                                    <span class='pas-places-item-extra-desc'>Доп.услуги:</span>
+                                    <span class='pas-places-item-extra-value'>нет</span>
+                                </li>
+                            </ul>
+                            <div class='input-wrapper select-wrapper select-pas-places'>
+                                <div class='selected-option selected-option'>Сусик Чупс Годзе</div>
+                                <img src='./svg/actions/select-arrow.svg' alt='select-arrow'>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class='pas-places-add-passenger'>
+                        <img src='./svg/arrows/arrow-subtle-rect-from.svg' alt='arrow-subtle'
+                            class='pas-places-add-icon'>
+                        <button class='btn btn-pas-places-add-passenger'>Добавить пассажиров</button>
+                    </div>
+                </div>
+            </div>
+            <button class='btn btn-pas-places-next-section btn-next-section-unchecked'>Далее</button>
+        </div>
+    </main>
+</body>
+
+</html>
